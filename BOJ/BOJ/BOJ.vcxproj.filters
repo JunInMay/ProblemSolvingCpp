@@ -4,10 +4,16 @@
     <Filter Include="from25600">
       <UniqueIdentifier>{0de35f83-fd06-4793-8599-12e4adff236a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="from9100">
+      <UniqueIdentifier>{b538a53a-7bfd-4b1d-aa7a-001258b6b803}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BOJ25628.cpp">
       <Filter>from25600</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ9151.cpp">
+      <Filter>from9100</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
