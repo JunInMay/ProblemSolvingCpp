@@ -7,8 +7,11 @@
     <Filter Include="from9100">
       <UniqueIdentifier>{b538a53a-7bfd-4b1d-aa7a-001258b6b803}</UniqueIdentifier>
     </Filter>
-    <Filter Include="BOJ28300">
+    <Filter Include="from28300">
       <UniqueIdentifier>{0be406f8-255c-4fb5-939b-6fca82b125e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="from24300">
+      <UniqueIdentifier>{853b8643-1776-4c32-98f8-008e7891c6f9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -19,7 +22,10 @@
       <Filter>from9100</Filter>
     </ClCompile>
     <ClCompile Include="BOJ28352.cpp">
-      <Filter>BOJ28300</Filter>
+      <Filter>from28300</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ24313.cpp">
+      <Filter>from24300</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
