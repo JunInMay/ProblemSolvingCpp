@@ -57,8 +57,17 @@
     <ClCompile Include="from25300\BOJ25305.cpp">
       <Filter>from25300</Filter>
     </ClCompile>
-    <ClCompile Include="from1600\BOJ1620.cpp">
-      <Filter>from1600</Filter>
+    <ClCompile Include="from1200\BOJ1269.cpp">
+      <Filter>from1200</Filter>
+    </ClCompile>
+    <ClCompile Include="from1700\BOJ1735.cpp">
+      <Filter>from1700</Filter>
+    </ClCompile>
+    <ClCompile Include="from1700\BOJ1764.cpp">
+      <Filter>from1700</Filter>
+    </ClCompile>
+    <ClCompile Include="from11400\BOJ11478.cpp">
+      <Filter>from11400</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
