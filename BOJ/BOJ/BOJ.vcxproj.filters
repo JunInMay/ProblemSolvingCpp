@@ -37,26 +37,17 @@
     <Filter Include="from2400">
       <UniqueIdentifier>{876db211-3d70-40be-beff-2a8284b996b0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="from17100">
+      <UniqueIdentifier>{f7762545-4177-4640-8dd3-4b40617c1e84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="from4100">
+      <UniqueIdentifier>{602a2d95-dad7-4664-b0bc-48c4d345445a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="from13200">
+      <UniqueIdentifier>{3144b570-ab2b-4e6d-8e06-f4d437bdcf40}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BOJ25628.cpp">
-      <Filter>from25600</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ9151.cpp">
-      <Filter>from9100</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ28352.cpp">
-      <Filter>from28300</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ24313.cpp">
-      <Filter>from24300</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ11586.cpp">
-      <Filter>from11500</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ2587.cpp">
-      <Filter>from2500</Filter>
-    </ClCompile>
     <ClCompile Include="from25300\BOJ25305.cpp">
       <Filter>from25300</Filter>
     </ClCompile>
@@ -75,6 +66,14 @@
     <ClCompile Include="from2400\BOJ2485.cpp">
       <Filter>from2400</Filter>
     </ClCompile>
-    <ClCompile Include="from4100\BOJ4134.cpp" />
+    <ClCompile Include="from17100\BOJ17103.cpp">
+      <Filter>from17100</Filter>
+    </ClCompile>
+    <ClCompile Include="from4100\BOJ4134.cpp">
+      <Filter>from4100</Filter>
+    </ClCompile>
+    <ClCompile Include="from13200\BOJ13241.cpp">
+      <Filter>from13200</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
