@@ -4,10 +4,11 @@
 
 
 using namespace std;
-bool shieve[1000001];
 
 int main() {
-	fill(shieve, shieve + 1000001, 1);
+	bool* shieve = new bool[1000001];
+
+	fill(shieve, shieve + 1000001, true);
 
 	shieve[0] = false;
 	shieve[1] = false;
