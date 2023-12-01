@@ -87,5 +87,8 @@
     <ClCompile Include="from28300\BOJ28352.cpp">
       <Filter>from28300</Filter>
     </ClCompile>
+    <ClCompile Include="from11500\BOJ11586.cpp">
+      <Filter>from11500</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
