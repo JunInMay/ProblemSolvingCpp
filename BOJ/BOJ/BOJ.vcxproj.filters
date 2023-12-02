@@ -46,6 +46,9 @@
     <Filter Include="from4300">
       <UniqueIdentifier>{f9c13aa1-0056-4fd7-b3d5-53787cf4feba}</UniqueIdentifier>
     </Filter>
+    <Filter Include="from13900">
+      <UniqueIdentifier>{5a952213-02a3-4e01-b13d-ab298d149990}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="from25300\BOJ25305.cpp">
@@ -95,6 +98,9 @@
     </ClCompile>
     <ClCompile Include="from4300\BOJ4375.cpp">
       <Filter>from4300</Filter>
+    </ClCompile>
+    <ClCompile Include="from13900\BOJ13909.cpp">
+      <Filter>from13900</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
