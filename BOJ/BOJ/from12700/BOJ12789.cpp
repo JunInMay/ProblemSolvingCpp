@@ -1,3 +1,4 @@
+// https://www.acmicpc.net/problem/12789 도키도키 간식드리미 2023-12-05
 #include <iostream>
 #include <stack>
 
@@ -17,9 +18,9 @@ int main() {
 		cin >> student;
 		st.push(student);
 
-		for (int j = 0; j < st.size(); j++) {
+		int size = st.size();
+		for (int j = 0; j < size; j++) {
 			if (st.top() == next) {
-				cout << st.top() << "출력됨 \n";
 				st.pop();
 				next += 1;
 			}
