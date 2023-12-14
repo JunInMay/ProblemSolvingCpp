@@ -141,11 +141,13 @@
     <ClCompile Include="from14200\BOJ14264.cpp">
       <Filter>from14200</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ28279.cpp">
-      <Filter>from28200</Filter>
-    </ClCompile>
     <ClCompile Include="from29700\BOJ29725.cpp">
       <Filter>from29700</Filter>
     </ClCompile>
+    <ClCompile Include="from15600\BOJ15686.cpp" />
+    <ClCompile Include="from25900\BOJ25965.cpp" />
+    <ClCompile Include="from27400\BOJ27433.cpp" />
+    <ClCompile Include="from28200\BOJ28279.cpp" />
+    <ClCompile Include="from17400\BOJ17404.cpp" />
   </ItemGroup>
 </Project>
