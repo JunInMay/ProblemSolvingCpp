@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/11062 BOJ 11062 카드 게임 2023-12-22
+// https://www.acmicpc.net/problem/11062 BOJ 11062 카드 게임 2023-12-22 Failed..
 #include <iostream>
 #include <deque>
 
