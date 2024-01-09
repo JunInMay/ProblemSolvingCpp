@@ -1,181 +1,59 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="from25600">
-      <UniqueIdentifier>{0de35f83-fd06-4793-8599-12e4adff236a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="from9100">
-      <UniqueIdentifier>{b538a53a-7bfd-4b1d-aa7a-001258b6b803}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="from28300">
-      <UniqueIdentifier>{0be406f8-255c-4fb5-939b-6fca82b125e4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="from24300">
-      <UniqueIdentifier>{853b8643-1776-4c32-98f8-008e7891c6f9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="from11500">
-      <UniqueIdentifier>{a5de2d8e-8818-4f5c-ab82-79db45a579ff}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="from2500">
-      <UniqueIdentifier>{5b79802e-cf90-4f33-95db-bec80e19c573}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="from25300">
-      <UniqueIdentifier>{46fd19bf-ce63-47da-9eea-d493bc5fe6f5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="from11400">
-      <UniqueIdentifier>{79c8b27e-98b5-4531-9c4c-dc037bb01565}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="from1200">
-      <UniqueIdentifier>{1d9392c1-c3bf-4a5f-8024-28c8aa947bdf}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="from1700">
-      <UniqueIdentifier>{425b0fcf-bd67-4882-8281-3198a4ce65aa}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="from2400">
-      <UniqueIdentifier>{876db211-3d70-40be-beff-2a8284b996b0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="from17100">
-      <UniqueIdentifier>{f7762545-4177-4640-8dd3-4b40617c1e84}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="from4100">
-      <UniqueIdentifier>{602a2d95-dad7-4664-b0bc-48c4d345445a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="from13200">
-      <UniqueIdentifier>{3144b570-ab2b-4e6d-8e06-f4d437bdcf40}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="from4300">
-      <UniqueIdentifier>{f9c13aa1-0056-4fd7-b3d5-53787cf4feba}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="from13900">
-      <UniqueIdentifier>{5a952213-02a3-4e01-b13d-ab298d149990}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="from17070">
-      <UniqueIdentifier>{e83226bd-a254-4d4d-ac8b-6cfaff0f84b8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="from28200">
-      <UniqueIdentifier>{2e3b14c8-936a-4d7c-84a2-1d1725ca311b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="from12700">
-      <UniqueIdentifier>{76df862d-5c30-4f75-8cb2-cd052dbc45af}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="from2100">
-      <UniqueIdentifier>{0264633b-e197-434b-8d2c-959c5b67d627}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="from11800">
-      <UniqueIdentifier>{e9060487-ca7f-4d52-9258-9c2413fe5cd7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="from14200">
-      <UniqueIdentifier>{37d167f0-e0f4-48e5-b7fb-102181f2e3df}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="from29700">
-      <UniqueIdentifier>{d34e6f2c-65a1-4f6d-a92a-cc2f8e58d799}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="from25300\BOJ25305.cpp">
-      <Filter>from25300</Filter>
-    </ClCompile>
-    <ClCompile Include="from1200\BOJ1269.cpp">
-      <Filter>from1200</Filter>
-    </ClCompile>
-    <ClCompile Include="from1700\BOJ1735.cpp">
-      <Filter>from1700</Filter>
-    </ClCompile>
-    <ClCompile Include="from1700\BOJ1764.cpp">
-      <Filter>from1700</Filter>
-    </ClCompile>
-    <ClCompile Include="from11400\BOJ11478.cpp">
-      <Filter>from11400</Filter>
-    </ClCompile>
-    <ClCompile Include="from2400\BOJ2485.cpp">
-      <Filter>from2400</Filter>
-    </ClCompile>
-    <ClCompile Include="from17100\BOJ17103.cpp">
-      <Filter>from17100</Filter>
-    </ClCompile>
-    <ClCompile Include="from4100\BOJ4134.cpp">
-      <Filter>from4100</Filter>
-    </ClCompile>
-    <ClCompile Include="from13200\BOJ13241.cpp">
-      <Filter>from13200</Filter>
-    </ClCompile>
-    <ClCompile Include="from24300\BOJ24313.cpp">
-      <Filter>from24300</Filter>
-    </ClCompile>
-    <ClCompile Include="from9100\BOJ9151.cpp">
-      <Filter>from9100</Filter>
-    </ClCompile>
-    <ClCompile Include="from2500\BOJ2587.cpp">
-      <Filter>from2500</Filter>
-    </ClCompile>
-    <ClCompile Include="from25600\BOJ25628.cpp">
-      <Filter>from25600</Filter>
-    </ClCompile>
-    <ClCompile Include="from28300\BOJ28352.cpp">
-      <Filter>from28300</Filter>
-    </ClCompile>
-    <ClCompile Include="from11500\BOJ11586.cpp">
-      <Filter>from11500</Filter>
-    </ClCompile>
-    <ClCompile Include="from4300\BOJ4375.cpp">
-      <Filter>from4300</Filter>
-    </ClCompile>
-    <ClCompile Include="from13900\BOJ13909.cpp">
-      <Filter>from13900</Filter>
-    </ClCompile>
-    <ClCompile Include="from17000\BOJ17070.cpp">
-      <Filter>from17070</Filter>
-    </ClCompile>
-    <ClCompile Include="from28200\BOJ28278.cpp">
-      <Filter>from28200</Filter>
-    </ClCompile>
-    <ClCompile Include="from12700\BOJ12789.cpp">
-      <Filter>from12700</Filter>
-    </ClCompile>
-    <ClCompile Include="from2100\BOJ2164.cpp">
-      <Filter>from2100</Filter>
-    </ClCompile>
-    <ClCompile Include="from11800\BOJ11866.cpp">
-      <Filter>from11800</Filter>
-    </ClCompile>
-    <ClCompile Include="from14200\BOJ14264.cpp">
-      <Filter>from14200</Filter>
-    </ClCompile>
-    <ClCompile Include="from29700\BOJ29725.cpp">
-      <Filter>from29700</Filter>
-    </ClCompile>
-    <ClCompile Include="from15600\BOJ15686.cpp" />
-    <ClCompile Include="from25900\BOJ25965.cpp" />
-    <ClCompile Include="from27400\BOJ27433.cpp" />
-    <ClCompile Include="from28200\BOJ28279.cpp" />
-    <ClCompile Include="from17400\BOJ17404.cpp" />
-    <ClCompile Include="from26300\BOJ26332.cpp" />
-    <ClCompile Include="from9900\BOJ9950.cpp" />
-    <ClCompile Include="from11300\BOJ11367.cpp" />
-    <ClCompile Include="from13400\BOJ13458.cpp" />
-    <ClCompile Include="from3190\BOJ3190.cpp" />
-    <ClCompile Include="from1900\BOJ1977.cpp" />
-    <ClCompile Include="from11000\BOJ11062.cpp" />
-    <ClCompile Include="from28900\BOJ28940.cpp" />
-    <ClCompile Include="from11000\BOJ11098.cpp" />
-    <ClCompile Include="from2400\BOJ2490.cpp" />
-    <ClCompile Include="from24900\BOJ24923.cpp" />
-    <ClCompile Include="from1300\BOJ1339.cpp" />
-    <ClCompile Include="from14500\BOJ14502.cpp" />
     <ClCompile Include="from10800\BOJ10833.cpp" />
+    <ClCompile Include="from11000\BOJ11062.cpp" />
+    <ClCompile Include="from11000\BOJ11098.cpp" />
+    <ClCompile Include="from11300\BOJ11367.cpp" />
+    <ClCompile Include="from1300\BOJ1339.cpp" />
+    <ClCompile Include="from13400\BOJ13458.cpp" />
     <ClCompile Include="from13700\BOJ13752.cpp" />
-    <ClCompile Include="from17000\BOJ17094.cpp" />
     <ClCompile Include="from14500\BOJ14500.cpp" />
-    <ClCompile Include="from25700\BOJ25784.cpp" />
-    <ClCompile Include="from28200\BOJ28248.cpp" />
+    <ClCompile Include="from14500\BOJ14502.cpp" />
+    <ClCompile Include="from15600\BOJ15686.cpp" />
+    <ClCompile Include="from17000\BOJ17094.cpp" />
+    <ClCompile Include="from17400\BOJ17404.cpp" />
+    <ClCompile Include="from1900\BOJ1977.cpp" />
     <ClCompile Include="from20800\BOJ20839.cpp" />
     <ClCompile Include="from23000\BOJ23027.cpp" />
-<<<<<<< HEAD
-    <ClCompile Include="from26000\BOJ26040.cpp" />
-    <ClCompile Include="from27300\BOJ27325.cpp" />
-=======
     <ClCompile Include="from2400\BOJ2460.cpp" />
+    <ClCompile Include="from2400\BOJ2490.cpp" />
+    <ClCompile Include="from24900\BOJ24923.cpp" />
+    <ClCompile Include="from25700\BOJ25784.cpp" />
+    <ClCompile Include="from25900\BOJ25965.cpp" />
     <ClCompile Include="from26000\BOJ26040.cpp" />
->>>>>>> 197e5b8d35f30c9996f3f0365a0908f21e1ab87c
+    <ClCompile Include="from26300\BOJ26332.cpp" />
+    <ClCompile Include="from27300\BOJ27325.cpp" />
+    <ClCompile Include="from27400\BOJ27433.cpp" />
+    <ClCompile Include="from28200\BOJ28248.cpp" />
+    <ClCompile Include="from28200\BOJ28279.cpp" />
+    <ClCompile Include="from11400\BOJ11478.cpp" />
+    <ClCompile Include="from11500\BOJ11586.cpp" />
+    <ClCompile Include="from11800\BOJ11866.cpp" />
+    <ClCompile Include="from1200\BOJ1269.cpp" />
+    <ClCompile Include="from12700\BOJ12789.cpp" />
+    <ClCompile Include="from13900\BOJ13909.cpp" />
+    <ClCompile Include="from14200\BOJ14264.cpp" />
+    <ClCompile Include="from17000\BOJ17070.cpp" />
+    <ClCompile Include="from1700\BOJ1735.cpp" />
+    <ClCompile Include="from13200\BOJ13241.cpp" />
+    <ClCompile Include="from1700\BOJ1764.cpp" />
+    <ClCompile Include="from17100\BOJ17103.cpp" />
+    <ClCompile Include="from2100\BOJ2164.cpp" />
+    <ClCompile Include="from2400\BOJ2485.cpp" />
+    <ClCompile Include="from24300\BOJ24313.cpp" />
+    <ClCompile Include="from2500\BOJ2587.cpp" />
+    <ClCompile Include="from25300\BOJ25305.cpp" />
+    <ClCompile Include="from25600\BOJ25628.cpp" />
+    <ClCompile Include="from28200\BOJ28278.cpp" />
+    <ClCompile Include="from28300\BOJ28352.cpp" />
+    <ClCompile Include="from28900\BOJ28940.cpp" />
+    <ClCompile Include="from29700\BOJ29725.cpp" />
+    <ClCompile Include="from3190\BOJ3190.cpp" />
+    <ClCompile Include="from4100\BOJ4134.cpp" />
+    <ClCompile Include="from4300\BOJ4375.cpp" />
+    <ClCompile Include="from9100\BOJ9151.cpp" />
+    <ClCompile Include="from9900\BOJ9950.cpp" />
+    <ClCompile Include="from25800\BOJ25859.cpp" />
   </ItemGroup>
 </Project>
