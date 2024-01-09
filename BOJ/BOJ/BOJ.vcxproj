@@ -178,6 +178,12 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="from23000\BOJ23027.cpp">
+<<<<<<< HEAD
+=======
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="from2400\BOJ2460.cpp">
+>>>>>>> 197e5b8d35f30c9996f3f0365a0908f21e1ab87c
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="from2400\BOJ2490.cpp">
