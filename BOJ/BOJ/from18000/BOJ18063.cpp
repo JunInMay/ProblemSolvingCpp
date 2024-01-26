@@ -8,22 +8,39 @@ int main() {
 	int n, c;
 	cin >> n >> c;
 
+	int total = 0;
 	for (int i = 0; i < n; i++) {
 		string inputString;
-		getline(cin, inputString);
+		cin >> inputString;
 
-		int colonCount = 0;
-		for (int j = 0; j < inputString.size(); j++) {
-			if (inputString[i] == ':') {
-				colonCount++;
-			}
-		}
-
-		if (colonCount == 1) {
-
-		}
-		else if (colonCount == 2) {
-
-		}
+		int m = inputString[0] - '0';
+		int s = (inputString[2] - '0') * 10 + inputString[3] - '0';
+		
+		total += m * 60 + s;
 	}
+
+	total -= (n - 1) * c;
+	int hour = total / 3600;
+	total %= 3600;
+	int minute = total / 60;
+	total %= 60;
+	int second = total;
+
+	string buf = "";
+	if (hour < 10) {
+		buf = "0";
+	}
+	cout << buf + to_string(hour) << ":";
+
+	buf = "";
+	if (minute < 10) {
+		buf = "0";
+	}
+	cout << buf + to_string(minute) << ":";
+	
+	buf = "";
+	if (second < 10) {
+		buf = "0";
+	}
+	cout << buf + to_string(second);
 }
