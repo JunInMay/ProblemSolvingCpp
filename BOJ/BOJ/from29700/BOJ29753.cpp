@@ -1,4 +1,9 @@
 // https://www.acmicpc.net/problem/29753 BOJ 29753 최소 성적 2024-01-31
+/*
+쉬운 줄 알았는데 골치 아팠던 문제.
+(int)(0.9 * 100) 하면 90이 나올 줄 알았는데 89가 나온다.
+나머지는 소수점 세자리 수 버림 계산을 편하게 하기 위해 100을 곱해서 처리.
+*/
 #include <iostream>
 #include <cmath>
 
@@ -6,10 +11,9 @@ using namespace std;
 
 int main() {
 	int N;
-	int x1 = 0, x2 = 0;
-	cin >> N;
-	scanf_s("%d.%d", x1, x2);
-	int X = x1 * 100 + x2;
+	double xInput;
+	cin >> N >> xInput;
+	int X = round(xInput * 100); // 여기가 문제.
 
 	int point;
 	int pointSum = 0;
@@ -56,8 +60,9 @@ int main() {
 		int nowGrade = i;
 		cout << "now : " << nowGrade << '\n';
 		int nowSum = averageTempPoint + nowGrade * point;
-		cout << " ns , X : " << nowSum << " " << X * pointSum << '\n';
-		if (nowSum > X * pointSum) {
+		int nowAverage = nowSum / pointSum;
+		cout << " nowAver , X : " << nowAverage << " " << X << '\n';
+		if (nowAverage > X) {
 			string result = "";
 			switch (i) {
 			case 100:
