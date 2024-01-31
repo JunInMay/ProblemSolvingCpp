@@ -8,6 +8,8 @@ int main() {
 	int N;
 	double X;
 	cin >> N >> X;
+	X *= 100;
+	X = (int)X;
 
 	int point;
 	double pointSum = 0;
@@ -20,77 +22,29 @@ int main() {
 		cin >> gradeStr;
 
 		if (gradeStr == "A+")
-			grade = 4.5;
+			grade = 450;
 		else if (gradeStr == "A0")
-			grade = 4;
+			grade = 400;
 		else if (gradeStr == "B+")
-			grade = 3.5;
+			grade = 350;
 		else if (gradeStr == "B0")
-			grade = 3;
+			grade = 300;
 		else if (gradeStr == "C+")
-			grade = 2.5;
+			grade = 250;
 		else if (gradeStr == "C0")
-			grade = 2;
+			grade = 200;
 		else if (gradeStr == "D+")
-			grade = 1.5;
+			grade = 150;
 		else if (gradeStr == "D0")
-			grade = 1;
+			grade = 100;
 		else if (gradeStr == "F")
 			grade = 0;
 
 		averagePoint += (point * grade);
 		pointSum += point;
 	}
+	cout << "av, pointSum : " << averagePoint << " " << pointSum << '\n';
 	cin >> point;
 	pointSum += point;
-	
-	double fTemp = (int)((averagePoint / pointSum) * 100);
-	
-	double fTest = fTemp / 100;
-	cout << "fTest : " << fTest << '\n';
-	if (fTest > X) {
-		cout << "F";
-		return 0;
-	}
-	//cout << (averagePoint + 4.5 * 3) / pointSum << '\n';
 
-	double candidate = 0;
-	for (double i = 2; i <= 9; i++) {
-		candidate = (averagePoint + (point * (i / 2))) / pointSum;
-		candidate = (int)(candidate * 100) / 1;
-		candidate /= 100;
-		if (candidate > X) {
-			string result = "";
-			switch ((int)i) {
-			case 2:
-				result = "D0";
-				break;
-			case 3:
-				result = "D+";
-				break;
-			case 4:
-				result = "C0";
-				break;
-			case 5:
-				result = "C+";
-				break;
-			case 6:
-				result = "B0";
-				break;
-			case 7:
-				result = "B+";
-				break;
-			case 8:
-				result = "A0";
-				break;
-			case 9:
-				result = "A+";
-				break;
-			}
-			cout << result;
-			return 0;
-		}
-	}
-	cout << "impossible";
-	
 }
