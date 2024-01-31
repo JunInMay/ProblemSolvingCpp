@@ -6,17 +6,16 @@ using namespace std;
 
 int main() {
 	int N;
-	double X;
-	cin >> N >> X;
-	X *= 100;
-	X = (int)X;
+	int x1 = 0, x2 = 0;
+	cin >> N;
+	scanf_s("%d.%d", x1, x2);
+	int X = x1 * 100 + x2;
 
 	int point;
-	double pointSum = 0;
+	int pointSum = 0;
 	string gradeStr;
-	double grade = 0;
-
-	double averagePoint = 0;
+	int grade = 0;
+	int averageTempPoint = 0;
 	for (int i = 0; i < N - 1; i++) {
 		cin >> point;
 		cin >> gradeStr;
@@ -40,11 +39,66 @@ int main() {
 		else if (gradeStr == "F")
 			grade = 0;
 
-		averagePoint += (point * grade);
+		averageTempPoint += (point * grade);
 		pointSum += point;
 	}
-	cout << "av, pointSum : " << averagePoint << " " << pointSum << '\n';
 	cin >> point;
 	pointSum += point;
+	cout << "X , pointSUm : " << X << " " << pointSum << '\n';
 
+	int fCheck = averageTempPoint / pointSum;
+	if (fCheck > X) {
+		cout << "F";
+		return 0;
+	}
+
+	for (int i = 100; i <= 450; i += 50) {
+		int nowGrade = i;
+		cout << "now : " << nowGrade << '\n';
+		int nowSum = averageTempPoint + nowGrade * point;
+		cout << " ns , X : " << nowSum << " " << X * pointSum << '\n';
+		if (nowSum > X * pointSum) {
+			string result = "";
+			switch (i) {
+			case 100:
+				result = "D0";
+				break;
+			case 150:
+				result = "D+";
+				break;
+			case 200:
+				result = "C0";
+				break;
+			case 250:
+				result = "C+";
+				break;
+			case 300:
+				result = "B0";
+				break;
+			case 350:
+				result = "B+";
+				break;
+			case 400:
+				result = "A0";
+				break;
+			case 450:
+				result = "A+";
+				break;
+			}
+
+			cout << result;
+			return 0;
+		}
+	}
+	cout << "impossible";
 }
+
+/*
+4 4.45
+3 A+
+3 A+
+3 A+
+1
+
+
+*/
