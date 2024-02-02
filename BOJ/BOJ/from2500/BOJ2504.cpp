@@ -36,22 +36,18 @@ int dfs() {
 
 		if (!value) value = 1;
 		// °ýÈ£°¡ ´ÝÇûÀ» °æ¿ì ¹ë·ù °è»ê
-		if (now == ')') {
-			result += value * 2;
-			idx++;
-			open = 0;
-			value = 0;
-			break;
-		}
-		if (now == ']') {
-			result += value * 3;
-			idx++;
-			open = 0;
-			value = 0;
-			break;
-		}
+		int bracketScore = 2;
+		if (now == ')') 
+			bracketScore = 2;
+		if (now == ']') 
+			bracketScore = 3;
+
+		result += value * bracketScore;
+		idx++;
+		open = 0;
+		value = 0;
+		return result;
 	}
-	return result;
 }
 
 int main() {
@@ -65,7 +61,7 @@ int main() {
 	}
 	result = max(result, 0);
 	cout << result << '\n';
-	
+	system("pause");
 }
 /*
 https://www.acmicpc.net/board/view/42873
