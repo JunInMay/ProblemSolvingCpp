@@ -76,6 +76,12 @@
     <ClCompile Include="from17700\BOJ17780Failed.cpp" />
     <ClCompile Include="from31200\BOJ31281.cpp" />
     <ClCompile Include="from29700\BOJ29753.cpp" />
+<<<<<<< HEAD
     <ClCompile Include="from27800\BOJ27855.cpp" />
+=======
+    <ClCompile Include="from2500\BOJ2504.cpp" />
+    <ClCompile Include="from5300\BOJ5345.cpp" />
+    <ClCompile Include="from13800\BOJ13878.cpp" />
+>>>>>>> 85e2024051f7730d45b8552e9704c5864910320b
   </ItemGroup>
 </Project>
