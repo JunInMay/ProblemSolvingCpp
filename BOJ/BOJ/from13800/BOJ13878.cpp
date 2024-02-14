@@ -17,7 +17,7 @@ map<char, int> table = {
 };
 
 int checkSumPoint[] = { 2, 4, 5, 7, 8, 10, 11, 13 };
-bool checkSum(string s) {
+bool checkSum(string& s) {
 
 	int sum = 0;
 	for (int i = 0; i < 8; i++) {
@@ -28,7 +28,7 @@ bool checkSum(string s) {
 	return sum % 27 == table[s[8]];
 }
 
-string toTwentySeven(string s) {
+string toTwentySeven(string& s) {
 	long long result = 0;
 	for (int i = 0; i < 8; i++) {
 		result += table[s[i]] * pow(27, 7 - i);
