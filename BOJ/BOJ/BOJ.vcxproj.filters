@@ -111,5 +111,6 @@
     <ClCompile Include="from25600\BOJ25642.cpp" />
     <ClCompile Include="from29100\BOJ29141.cpp" />
     <ClCompile Include="from25000\BOJ25088.cpp" />
+    <ClCompile Include="from8400\BOJ8436.cpp" />
   </ItemGroup>
 </Project>
