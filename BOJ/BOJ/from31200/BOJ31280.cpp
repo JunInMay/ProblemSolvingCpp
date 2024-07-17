@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/31280 BOJ 31280 ¨∂¨°¨¨¨™¨≤ 2024-03-07
+// https://www.acmicpc.net/problem/31280 BOJ 31280 –§–ê–ö–ò–† 2024-03-07
 #include <iostream>
 
 using namespace std;

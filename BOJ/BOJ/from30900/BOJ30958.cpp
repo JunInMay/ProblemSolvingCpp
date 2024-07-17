@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/30958 BOJ 30958 ¼­¿ï»çÀÌ¹ö´ëÇĞÀ» ´Ù´Ï°í 2024-02-07
+// https://www.acmicpc.net/problem/30958 BOJ 30958 ì„œìš¸ì‚¬ì´ë²„ëŒ€í•™ì„ ë‹¤ë‹ˆê³  2024-02-07
 #include <iostream>
 #include <string>
 

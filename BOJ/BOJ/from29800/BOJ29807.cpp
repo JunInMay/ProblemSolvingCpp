@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/29807 BOJ 29807 ÇĞ¹øÀ» Ã£¾ÆÁà! 2024-02-23
+// https://www.acmicpc.net/problem/29807 BOJ 29807 í•™ë²ˆì„ ì°¾ì•„ì¤˜! 2024-02-23
 #include <iostream>
 #include <cmath>
 

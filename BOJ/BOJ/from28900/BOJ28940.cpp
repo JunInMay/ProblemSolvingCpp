@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/28940 ¬¥¬ß¬Ö¬Ó¬ß¬Ú¬Ü ¬¤¬â¬Ñ¬Ó¬Ú¬ä¬Ú ¬¶¬à¬Ý¬Ù BOJ 28940 2023-12-22
+// https://www.acmicpc.net/problem/28940 Ð”Ð½ÐµÐ²Ð½Ð¸Ðº Ð“Ñ€Ð°Ð²Ð¸Ñ‚Ð¸ Ð¤Ð¾Ð»Ð· BOJ 28940 2023-12-22
 #include <iostream>
 #include <cmath>
 

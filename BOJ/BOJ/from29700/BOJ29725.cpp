@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/29725 BOJ 29725 √ºΩ∫ √ ∫∏ ∫ÍΩ«¿Ã 2023-12-10
+// https://www.acmicpc.net/problem/29725 BOJ 29725 Ï≤¥Ïä§ Ï¥àÎ≥¥ Î∏åÏã§Ïù¥ 2023-12-10
 #include <iostream>
 
 using namespace std;

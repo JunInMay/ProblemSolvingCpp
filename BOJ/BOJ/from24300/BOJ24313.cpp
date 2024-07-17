@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/24313 ¾Ë°í¸®Áò ¼ö¾÷ - Á¡±ÙÀû Ç¥±â 1 BOJ 24313
+// https://www.acmicpc.net/problem/24313 ì•Œê³ ë¦¬ì¦˜ ìˆ˜ì—… - ì ê·¼ì  í‘œê¸° 1 BOJ 24313
 #include <iostream>
 
 using namespace std;

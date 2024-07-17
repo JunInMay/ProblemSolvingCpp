@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/4504 BOJ 4504 ¹è¼ö Ã£±â 2024-01-14
+// https://www.acmicpc.net/problem/4504 BOJ 4504 ë°°ìˆ˜ ì°¾ê¸° 2024-01-14
 #include <iostream>
 
 using namespace std;

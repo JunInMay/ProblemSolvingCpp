@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/25965 BOJ 25965 ¹Ì¼Ç µµ³×ÀÌ¼Ç 2023-12-11
+// https://www.acmicpc.net/problem/25965 BOJ 25965 ë¯¸ì…˜ ë„ë„¤ì´ì…˜ 2023-12-11
 #include <iostream>
 #include <cmath>
 

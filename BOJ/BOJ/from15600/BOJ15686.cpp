@@ -1,6 +1,6 @@
-// https://www.acmicpc.net/problem/15686 д║е╡ ╧Х╢ч BOJ 15686 2023-12-13
+// https://www.acmicpc.net/problem/15686 Л╧≤М┌╗ К╟╟К▀╛ BOJ 15686 2023-12-13
 /*
-а╤гую╩ dfs ╥н ╠╦гЖ
+Л║╟М∙╘Л²└ dfs К║° Й╣╛М≤└
 */
 #include <iostream>
 #include <vector>

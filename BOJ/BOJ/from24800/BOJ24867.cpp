@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/24867 BOJ 24867 ¨•¨”¨— ¨„¨‰¨—¨ﬂ¨‹¨— 2024-03-03
+// https://www.acmicpc.net/problem/24867 BOJ 24867 –î–≤–∞ —Å—Ç–∞–Ω–∫–∞ 2024-03-03
 #include <iostream>
 
 using namespace std;

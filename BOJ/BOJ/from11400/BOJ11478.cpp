@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/11478 ¼­·Î ´Ù¸¥ ºÎºĞ ¹®ÀÚ¿­ÀÇ °³¼ö 2023-11-25
+// https://www.acmicpc.net/problem/11478 ì„œë¡œ ë‹¤ë¥¸ ë¶€ë¶„ ë¬¸ìì—´ì˜ ê°œìˆ˜ 2023-11-25
 #include <iostream>
 #include <set>
 

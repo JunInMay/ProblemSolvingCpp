@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/2587 boj 2587 ´ëÇ¥°ª2 2023-11-20
+// https://www.acmicpc.net/problem/2587 boj 2587 ëŒ€í‘œê°’2 2023-11-20
 #include <iostream>
 #include <vector>
 

@@ -1,6 +1,6 @@
 // https://www.acmicpc.net/problem/30664 BOJ 30664 Loteria Falha 2024-05-23
 /*
-* ¾öÃ»³ª°Ô Å« ¼ö(30ÀÚ¸®)¸¦ 42·Î ³ª´« °ªÀ» ±¸ÇÒ ¼ö ÀÖ¾î¾ß ÇØ¼­ ¹®ÀÚ¿­ÀÎ »óÅÂ¿¡¼­ ¼ýÀÚ¸¦ ´Ù·ë.
+* ì—„ì²­ë‚˜ê²Œ í° ìˆ˜(30ìžë¦¬)ë¥¼ 42ë¡œ ë‚˜ëˆˆ ê°’ì„ êµ¬í•  ìˆ˜ ìžˆì–´ì•¼ í•´ì„œ ë¬¸ìžì—´ì¸ ìƒíƒœì—ì„œ ìˆ«ìžë¥¼ ë‹¤ë£¸.
 */
 #include <iostream>
 #include <string>

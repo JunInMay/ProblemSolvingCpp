@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/2460 BOJ 2460 Áö´ÉÇü ±âÂ÷ 2 2024-01-04
+// https://www.acmicpc.net/problem/2460 BOJ 2460 ì§€ëŠ¥í˜• ê¸°ì°¨ 2 2024-01-04
 #include <iostream>
 #include <cmath>
 

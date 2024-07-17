@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/11866 ¿ä¼¼Çª½º ¹®Á¦ 0 2023-12-07
+// https://www.acmicpc.net/problem/11866 ìš”ì„¸í‘¸ìŠ¤ ë¬¸ì œ 0 2023-12-07
 #include <iostream>
 #include <queue>
 

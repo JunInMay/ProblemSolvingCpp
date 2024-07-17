@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/27939 2024-05-16 BOJ 27939 °¡Áö ±³¹è
+// https://www.acmicpc.net/problem/27939 2024-05-16 BOJ 27939 ê°€ì§€ êµë°°
 #include <iostream>
 
 using namespace std;

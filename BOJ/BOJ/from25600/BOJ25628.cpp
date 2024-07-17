@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/25628 231115 ÇÜ¹ö°Å ¸¸µé±â
+// https://www.acmicpc.net/problem/25628 231115 í–„ë²„ê±° ë§Œë“¤ê¸°
 #include <iostream>
 #include <cmath>
 

@@ -1,9 +1,9 @@
-// https://www.acmicpc.net/problem/17780 BOJ 17780 »õ·Î¿î °ÔÀÓ 2024-01-30
+// https://www.acmicpc.net/problem/17780 BOJ 17780 ìƒˆë¡œìš´ ê²Œìž„ 2024-01-30
 /*
-±¸Çö ½ÇÆÐ.
-ÆÐÀÎ : 
-Ã³À½¿¡ pieces¿¡¼­ deque<int> °¡ ¾Æ´Ï¶ó deque<pair<int, int>> Ã³·³
-Ã¼½º ¸»ÀÇ ¹øÈ£ »Ó ¾Æ´Ï¶ó ±× Ã¼½º ¸»ÀÌ ¾î¶² ¹æÇâÀ» º¸°í ÀÖ´ÂÁöµµ È®ÀÎÇß¾î¾ß ÇÔ.
+êµ¬í˜„ ì‹¤íŒ¨.
+íŒ¨ì¸ : 
+ì²˜ìŒì— piecesì—ì„œ deque<int> ê°€ ì•„ë‹ˆë¼ deque<pair<int, int>> ì²˜ëŸ¼
+ì²´ìŠ¤ ë§ì˜ ë²ˆí˜¸ ë¿ ì•„ë‹ˆë¼ ê·¸ ì²´ìŠ¤ ë§ì´ ì–´ë–¤ ë°©í–¥ì„ ë³´ê³  ìžˆëŠ”ì§€ë„ í™•ì¸í–ˆì–´ì•¼ í•¨.
 */
 #include <iostream>
 #include <vector>
@@ -12,16 +12,16 @@
 
 using namespace std;
 
-// pieces : °¢ Ã¼½º¸»ÀÌ ¸î ¹ø Ä­¿¡¼­ ¾î¶² ½ÄÀ¸·Î ¾÷ÇôÀÖ´ÂÁö È®ÀÎ
+// pieces : ê° ì²´ìŠ¤ë§ì´ ëª‡ ë²ˆ ì¹¸ì—ì„œ ì–´ë–¤ ì‹ìœ¼ë¡œ ì—…í˜€ìžˆëŠ”ì§€ í™•ì¸
 deque<int> pieces[14][14];
-// ÆÄ¶õ, »¡°£ Ä­ È®ÀÎ
+// íŒŒëž€, ë¹¨ê°„ ì¹¸ í™•ì¸
 int board[14][14];
-// ¿òÁ÷ÀÏ ¼ö ÀÖ´Â Ã¼½º ¸»ÀÌ ¸î ¹ø Ä­¿¡ ÀÖ´ÂÁö È®ÀÎ
-// <Ã¼½º¸» ¹øÈ£, <º¸°í ÀÖ´Â ¹æÇâ, <y°ª, x°ª>>>
+// ì›€ì§ì¼ ìˆ˜ ìžˆëŠ” ì²´ìŠ¤ ë§ì´ ëª‡ ë²ˆ ì¹¸ì— ìžˆëŠ”ì§€ í™•ì¸
+// <ì²´ìŠ¤ë§ ë²ˆí˜¸, <ë³´ê³  ìžˆëŠ” ë°©í–¥, <yê°’, xê°’>>>
 vector<pair<int, pair<int, pair<int, int>>>> order;
 int N, K;
 
-// ¿ìÁÂ»óÇÏ
+// ìš°ì¢Œìƒí•˜
 int dy[4] = { 0, 0, -1, 1 };
 int dx[4] = { 1, -1, 0, 0 };
 
@@ -54,7 +54,7 @@ void move() {
 		ny = y + dy[d];
 		nx = x + dx[d];
 
-		// ÇÊ¿äÇÒ ¼öµµ ÀÖ¾î¼­ ÀÏ´Ü ¼±¾ð ¾Æ¸¶ ºÒÇÊ¿äÇÒµí.
+		// í•„ìš”í•  ìˆ˜ë„ ìžˆì–´ì„œ ì¼ë‹¨ ì„ ì–¸ ì•„ë§ˆ ë¶ˆí•„ìš”í• ë“¯.
 		bool isOut = false;
 		if (ny < 1 || nx < 1 || ny > N || nx > N) isOut = true;
 
@@ -67,7 +67,7 @@ void move() {
 			deque<int>* nextPiece = &pieces[ny][nx];
 			if ((*nextPiece).size() != 0) isStacked = true;
 
-			// Èò»öÀÏ °æ¿ì
+			// í°ìƒ‰ì¼ ê²½ìš°
 			if (color == 0) {
 				int iteration = (*nowPiece).size();
 				for (int j = 0; j < iteration; j++) {
@@ -79,7 +79,7 @@ void move() {
 				nextSize = (*nextPiece).size();
 				break;
 			}
-			// »¡°£»öÀÏ °æ¿ì µÚÁý±â
+			// ë¹¨ê°„ìƒ‰ì¼ ê²½ìš° ë’¤ì§‘ê¸°
 			else if (color == 1) {
 				int iteration = (*nowPiece).size();
 				for (int j = 0; j < iteration; j++) {
@@ -91,18 +91,18 @@ void move() {
 				nextSize = (*nextPiece).size();
 				break;
 			}
-			// ÆÄ¶õ»öÀÏ °æ¿ì ¹æÇâÀüÈ¯
+			// íŒŒëž€ìƒ‰ì¼ ê²½ìš° ë°©í–¥ì „í™˜
 			else {
-				nd = convert(d); // ¹æÇâÀüÈ¯
+				nd = convert(d); // ë°©í–¥ì „í™˜
 				ny = y + dy[nd];
 				nx = x + dx[nd];
 
-				// ¹æÇâÀüÈ¯ÇØ¼­ ¿òÁ÷¿´À» ¶§ Á¤»óÀÎ °æ¿ì ÀÌµ¿ ÁøÇà
+				// ë°©í–¥ì „í™˜í•´ì„œ ì›€ì§ì˜€ì„ ë•Œ ì •ìƒì¸ ê²½ìš° ì´ë™ ì§„í–‰
 				if (board[ny][nx] != 2) {
 					d = nd;
 					continue;
 				}
-				// ºñÁ¤»óÀÎ °æ¿ì ¹æÇâ¸¸ ¹Ù²Û »óÅÂ¿¡¼­ ¸ØÃã
+				// ë¹„ì •ìƒì¸ ê²½ìš° ë°©í–¥ë§Œ ë°”ê¾¼ ìƒíƒœì—ì„œ ë©ˆì¶¤
 				else {
 					nextPiece = &pieces[y][x];
 					ny = y;

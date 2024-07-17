@@ -1,6 +1,6 @@
-// https://www.acmicpc.net/problem/22966 BOJ 22966 °¡Àå ½¬¿î ¹®Á¦¸¦ Ã£´Â ¹®Á¦ 2024-01-15
+// https://www.acmicpc.net/problem/22966 BOJ 22966 ê°€ìž¥ ì‰¬ìš´ ë¬¸ì œë¥¼ ì°¾ëŠ” ë¬¸ì œ 2024-01-15
 /*
-±×³É ¼øÈ¸ÇØ¼­ ÃÖ¼Ò°ªÀ» Ã£¾Æµµ µÆÁö¸¸, vector ¿Í sort ¿¬½ÀÀ» ÇÏ°í ½Í¾úÀ½.
+ê·¸ëƒ¥ ìˆœíšŒí•´ì„œ ìµœì†Œê°’ì„ ì°¾ì•„ë„ ëì§€ë§Œ, vector ì™€ sort ì—°ìŠµì„ í•˜ê³  ì‹¶ì—ˆìŒ.
 */
 #include <iostream>
 #include <vector>

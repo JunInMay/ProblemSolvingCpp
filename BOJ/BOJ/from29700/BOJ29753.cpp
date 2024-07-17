@@ -1,8 +1,8 @@
-// https://www.acmicpc.net/problem/29753 BOJ 29753 ÃÖ¼Ò ¼ºÀû 2024-01-31
+// https://www.acmicpc.net/problem/29753 BOJ 29753 ìµœì†Œ ì„±ì  2024-01-31
 /*
-½¬¿î ÁÙ ¾Ë¾Ò´Âµ¥ °ñÄ¡ ¾ÆÆÍ´ø ¹®Á¦.
-(int)(0.9 * 100) ÇÏ¸é 90ÀÌ ³ª¿Ã ÁÙ ¾Ë¾Ò´Âµ¥ 89°¡ ³ª¿Â´Ù.
-³ª¸ÓÁö´Â ¼Ò¼öÁ¡ ¼¼ÀÚ¸® ¼ö ¹ö¸² °è»êÀ» ÆíÇÏ°Ô ÇÏ±â À§ÇØ 100À» °öÇØ¼­ Ã³¸®.
+ì‰¬ìš´ ì¤„ ì•Œì•˜ëŠ”ë° ê³¨ì¹˜ ì•„íŒ ë˜ ë¬¸ì œ.
+(int)(0.9 * 100) í•˜ë©´ 90ì´ ë‚˜ì˜¬ ì¤„ ì•Œì•˜ëŠ”ë° 89ê°€ ë‚˜ì˜¨ë‹¤.
+ë‚˜ë¨¸ì§€ëŠ” ì†Œìˆ˜ì  ì„¸ìžë¦¬ ìˆ˜ ë²„ë¦¼ ê³„ì‚°ì„ íŽ¸í•˜ê²Œ í•˜ê¸° ìœ„í•´ 100ì„ ê³±í•´ì„œ ì²˜ë¦¬.
 */
 #include <iostream>
 #include <cmath>
@@ -13,7 +13,7 @@ int main() {
 	int N;
 	double xInput;
 	cin >> N >> xInput;
-	int X = round(xInput * 100); // ¿©±â°¡ ¹®Á¦.
+	int X = round(xInput * 100); // ì—¬ê¸°ê°€ ë¬¸ì œ.
 
 	int point;
 	int pointSum = 0;

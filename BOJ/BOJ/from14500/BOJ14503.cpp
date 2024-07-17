@@ -1,6 +1,6 @@
-// https://www.acmicpc.net/problem/14503 BOJ 14503 �κ� û�ұ� 2024-01-18
+// https://www.acmicpc.net/problem/14503 BOJ 14503 로봇 청소기 2024-01-18
 /*
-�� �κ� û�ұ⸦ ������������ �����δٱ淡 �׷��� ������ �� �˾Ҵµ� ����ִ� ���� ����.
+뭐 로봇 청소기를 동서남북으로 움직인다길래 그래프 문제인 줄 알았는데 재미있는 구현 문제.
 
 */
 #include <iostream>
@@ -10,7 +10,7 @@ using namespace std;
 
 int board[50][50], N, M;
 
-// �� �� �� ��
+// 북 동 남 서
 int dy[4] = { -1, 0, 1, 0 };
 int dx[4] = { 0, 1, 0, -1 };
 

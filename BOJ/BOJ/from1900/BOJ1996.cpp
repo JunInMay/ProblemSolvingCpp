@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/1996 BOJ 1996 Áö·Ú Ã£±â 2024-01-27
+// https://www.acmicpc.net/problem/1996 BOJ 1996 ì§€ë¢° ì°¾ê¸° 2024-01-27
 #include <iostream>
 #include <string>
 #include <cmath>

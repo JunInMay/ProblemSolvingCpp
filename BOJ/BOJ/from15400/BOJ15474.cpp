@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/15474 BOJ 15474 æçù¶ (Pencils) 2024-02-15
+// https://www.acmicpc.net/problem/15474 BOJ 15474 é‰›ç­† (Pencils) 2024-02-15
 #include <iostream>
 #include <cmath>
 

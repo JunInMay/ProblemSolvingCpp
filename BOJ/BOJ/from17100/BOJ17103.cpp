@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/17103 °ñµå¹ÙÈå ÆÄÆ¼¼Ç 2023-11-30
+// https://www.acmicpc.net/problem/17103 ê³¨ë“œë°”í íŒŒí‹°ì…˜ 2023-11-30
 #include <iostream>
 #include <algorithm>
 

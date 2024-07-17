@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/30009 BOJ 30009 Æ÷Áö¼Ç Á¦·Î 2024-01-16
+// https://www.acmicpc.net/problem/30009 BOJ 30009 í¬ì§€ì…˜ ì œë¡œ 2024-01-16
 #include <iostream>
 
 using namespace std;

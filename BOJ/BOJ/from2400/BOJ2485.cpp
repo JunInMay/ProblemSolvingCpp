@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/2485 °¡·Î¼ö 2023-11-28
+// https://www.acmicpc.net/problem/2485 ê°€ë¡œìˆ˜ 2023-11-28
 #include <iostream>
 #include <vector>
 

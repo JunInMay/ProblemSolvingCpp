@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/13458 BOJ 13458 ½ÃÇè °¨µ¶ 2023-12-19
+// https://www.acmicpc.net/problem/13458 BOJ 13458 ì‹œí—˜ ê°ë… 2023-12-19
 #include <iostream>
 #include <cmath>
 

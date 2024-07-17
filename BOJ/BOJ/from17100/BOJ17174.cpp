@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/17174 BOJ 17174 ÀüÃ¼ °è»ê È½¼ö 2024-01-22
+// https://www.acmicpc.net/problem/17174 BOJ 17174 ì „ì²´ ê³„ì‚° íšŸìˆ˜ 2024-01-22
 #include <iostream>
 #include <cmath>
 

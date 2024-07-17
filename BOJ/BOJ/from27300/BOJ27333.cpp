@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/27333 BOJ 27333 JOI «¨«Ç«£«¿ (JOI Editor) 2024-03-02
+// https://www.acmicpc.net/problem/27333 BOJ 27333 JOI ã‚¨ãƒ‡ã‚£ã‚¿ (JOI Editor) 2024-03-02
 #include <iostream>
 
 using namespace std;

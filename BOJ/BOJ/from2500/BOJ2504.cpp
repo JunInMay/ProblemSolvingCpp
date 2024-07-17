@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/2504 BOJ 2504 °ıÈ£ÀÇ °ª 2024-02-01
+// https://www.acmicpc.net/problem/2504 BOJ 2504 ê´„í˜¸ì˜ ê°’ 2024-02-01
 #include <iostream>
 #include <cmath>
 
@@ -25,17 +25,17 @@ int dfs() {
 			continue;
 		}
 
-		// openÀÌ ÀÖ´Âµ¥ ´Ù½Ã ¿­·ÈÀ» °æ¿ì´Â »õ·Î °ıÈ£°¡ »ı±ä °Í
+		// openì´ ìˆëŠ”ë° ë‹¤ì‹œ ì—´ë ¸ì„ ê²½ìš°ëŠ” ìƒˆë¡œ ê´„í˜¸ê°€ ìƒê¸´ ê²ƒ
 		if (now == '(' || now == '[') {
 			value += dfs();
 			continue;
 		}
-		// °ıÈ£°¡ Àß¸ø ´İÇûÀ» °æ¿ì ¿¡·¯
+		// ê´„í˜¸ê°€ ì˜ëª» ë‹«í˜”ì„ ê²½ìš° ì—ëŸ¬
 		if ((open == '(' && now == ']') || (open == '[' && now == ')'))
 			return error;
 
 		if (!value) value = 1;
-		// °ıÈ£°¡ ´İÇûÀ» °æ¿ì ¹ë·ù °è»ê
+		// ê´„í˜¸ê°€ ë‹«í˜”ì„ ê²½ìš° ë°¸ë¥˜ ê³„ì‚°
 		int bracketScore = 2;
 		if (now == ')') 
 			bracketScore = 2;
@@ -65,7 +65,7 @@ int main() {
 }
 /*
 https://www.acmicpc.net/board/view/42873
-¹İ·Ê
+ë°˜ë¡€
 ([)
 
 */

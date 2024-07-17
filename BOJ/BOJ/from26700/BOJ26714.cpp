@@ -1,4 +1,4 @@
-﻿// https://www.acmicpc.net/problem/26714 BOJ 26714 Liczenie punktów 2024-02-11
+// https://www.acmicpc.net/problem/26714 BOJ 26714 Liczenie punktów 2024-02-11
 #include <iostream>
 
 using namespace std;

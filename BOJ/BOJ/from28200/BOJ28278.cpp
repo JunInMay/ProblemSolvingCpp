@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/28278 ╫╨ец 2 2023-12-04
+// https://www.acmicpc.net/problem/28278 Л┼╓М┐² 2 2023-12-04
 #include <iostream>
 
 using namespace std;

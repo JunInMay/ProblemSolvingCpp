@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/28939 BOJ 28939 ¨∫¨‹¨—¨Ê ¨’¨›¨Ò ¨‡¨“¨Â¨”¨⁄ 2024-06-25
+// https://www.acmicpc.net/problem/28939 BOJ 28939 –®–∫–∞—Ñ –¥–ª—è –æ–±—É–≤–∏ 2024-06-25
 #include <iostream>
 #include <cmath>
 

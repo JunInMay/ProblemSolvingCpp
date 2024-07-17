@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/24510 BOJ 24510 ½Ã°£º¹Àâµµ¸¦ ¹è¿î µµµµ 2024-05-27
+// https://www.acmicpc.net/problem/24510 BOJ 24510 ì‹œê°„ë³µì¡ë„ë¥¼ ë°°ìš´ ë„ë„ 2024-05-27
 #include <iostream>
 #include <cmath>
 

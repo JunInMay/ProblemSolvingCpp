@@ -1,7 +1,7 @@
-// https://www.acmicpc.net/problem/2631 BOJ 2631 ÁÙ¼¼¿ì±â 2024-01-24
+// https://www.acmicpc.net/problem/2631 BOJ 2631 ì¤„ì„¸ìš°ê¸° 2024-01-24
 /*
 https://namu.wiki/w/%EC%B5%9C%EC%9E%A5%20%EC%A6%9D%EA%B0%80%20%EB%B6%80%EB%B6%84%20%EC%88%98%EC%97%B4
-ÃÖÀå Áõ°¡ ºÎºÐ ¼ö¿­ O(N^2) ¾Ë°í¸®ÁòÀ¸·Î ÇØ°á.
+ìµœìž¥ ì¦ê°€ ë¶€ë¶„ ìˆ˜ì—´ O(N^2) ì•Œê³ ë¦¬ì¦˜ìœ¼ë¡œ í•´ê²°.
 */
 #include <iostream>
 #include <cmath>

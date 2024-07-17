@@ -1,8 +1,8 @@
-//https://www.acmicpc.net/problem/17070 ÆÄÀÌÇÁ ¿Å±â±â 1 2023-12-03
-// ´õ ÁÁÀº Ç®ÀÌ : https://www.acmicpc.net/source/69898023
+//https://www.acmicpc.net/problem/17070 íŒŒì´í”„ ì˜®ê¸°ê¸° 1 2023-12-03
+// ë” ì¢‹ì€ í’€ì´ : https://www.acmicpc.net/source/69898023
 /*
-¾ÆÁ÷ C++¿¡ ÀÍ¼÷ÇØÁö´Â ÁßÀÌ±äÇÏ´Ù.
-Ã³À½À¸·Î C++·Î ±×·¡ÇÁ Å½»öÀ» ±¸ÇöÇØºÃ´Ù.
+ì•„ì§ C++ì— ìµìˆ™í•´ì§€ëŠ” ì¤‘ì´ê¸´í•˜ë‹¤.
+ì²˜ìŒìœ¼ë¡œ C++ë¡œ ê·¸ë˜í”„ íƒìƒ‰ì„ êµ¬í˜„í•´ë´¤ë‹¤.
 */
 #include <iostream>
 #include <queue>
@@ -13,7 +13,7 @@ using namespace std;
 class Pipe {
 public:
 	int startY, startX, endY, endX;
-	int direction; // -1 ¼¼·Î 0 ´ë°¢¼± 1 °¡·Î
+	int direction; // -1 ì„¸ë¡œ 0 ëŒ€ê°ì„  1 ê°€ë¡œ
 	Pipe(int sy, int sx, int d) : startY(sy), startX(sx), direction(d) {};
 	Pipe(int sy, int sx, int ey, int ex, int d) : startY(sy), startX(sx), endY(ey), endX(ex), direction(d) {};
 };
@@ -63,7 +63,7 @@ int main() {
 			break;
 		}
 
-		// ¼¼·Î È®ÀÎ
+		// ì„¸ë¡œ í™•ì¸
 		if (d == -1 || d == 0) {
 			if (ny + 1 < size && !board[ny + 1][nx]) {
 				Pipe next{ ny, nx, -1 };
@@ -72,7 +72,7 @@ int main() {
 			}
 		}
 
-		// °¡·Î È®ÀÎ
+		// ê°€ë¡œ í™•ì¸
 		if (d == 1 || d == 0) {
 			if (nx + 1 < size && !board[ny][nx + 1]) {
 				Pipe next{ ny, nx, 1 };
@@ -81,7 +81,7 @@ int main() {
 			}
 		}
 
-		// ´ë°¢¼± È®ÀÎ
+		// ëŒ€ê°ì„  í™•ì¸
 		if (nx + 1 < size && ny + 1 < size && (!board[ny + 1][nx + 1] && !board[ny][nx + 1] && !board[ny + 1][nx])) {
 			Pipe next{ ny, nx, 0 };
 			next.endY = ny + 1, next.endX = nx + 1;

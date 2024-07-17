@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/11586 BOJ 11586 Áö¿µ °øÁÖ´ÔÀÇ ¸¶¹ı °Å¿ï
+// https://www.acmicpc.net/problem/11586 BOJ 11586 ì§€ì˜ ê³µì£¼ë‹˜ì˜ ë§ˆë²• ê±°ìš¸
 #include <iostream>
 #include <vector>
 

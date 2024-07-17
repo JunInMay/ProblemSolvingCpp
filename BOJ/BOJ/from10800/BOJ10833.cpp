@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/10833 BOJ 10833 »ç°ú 2023-12-29 »õÇØ º¹ ¸¹ÀÌ ¹ŞÀ¸¼¼¿ä.
+// https://www.acmicpc.net/problem/10833 BOJ 10833 ì‚¬ê³¼ 2023-12-29 ìƒˆí•´ ë³µ ë§ì´ ë°›ìœ¼ì„¸ìš”.
 #include <iostream>
 
 using namespace std;

@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/24294 BOJ 24294 ¨§¨≤¨°¨•¨™¨Ø¨° 2024-01-10
+// https://www.acmicpc.net/problem/24294 BOJ 24294 –ì–†–ê–î–ò–ù–ê 2024-01-10
 #include <iostream>
 #include <cmath>
 

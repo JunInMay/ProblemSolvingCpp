@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/25305 BOJ 25305 ƒø∆Æ∂Û¿Œ 2023-11-21
+// https://www.acmicpc.net/problem/25305 BOJ 25305 Ïª§Ìä∏ÎùºÏù∏ 2023-11-21
 #include <iostream>
 #include <vector>
 

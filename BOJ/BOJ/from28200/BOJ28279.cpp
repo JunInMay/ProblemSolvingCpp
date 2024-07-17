@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/28279 µ¶ 2 BOJ28279 2023-12-09
+// https://www.acmicpc.net/problem/28279 Îç± 2 BOJ28279 2023-12-09
 #include <iostream>
 
 using namespace std;

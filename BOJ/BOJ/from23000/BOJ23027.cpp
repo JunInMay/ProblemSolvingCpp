@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/23027 BOJ 23027 1╧Ь╨нем ╧╝а╕юг ╩Себ╟║║╕? 2024-01-07
+// https://www.acmicpc.net/problem/23027 BOJ 23027 1К╡┬К╤─М└╟ К╛╦Л═°Л²≤ Л┐│М┐°Й╟─Б─╕? 2024-01-07
 #include <iostream>
 #include <cmath>
 

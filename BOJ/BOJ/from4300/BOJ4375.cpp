@@ -1,6 +1,6 @@
-// https://www.acmicpc.net/problem/4375 1 (Á¦¸ñÀÌ 1ÀÓ) 2023-12-01
+// https://www.acmicpc.net/problem/4375 1 (ì œëª©ì´ 1ìž„) 2023-12-01
 /*
-¸ðµâ·Î ºÐ¹è¹ýÄ¢À» È°¿ëÇÑ´Ù.
+ëª¨ë“ˆë¡œ ë¶„ë°°ë²•ì¹™ì„ í™œìš©í•œë‹¤.
 (A + B) % n = (A % n + B % n) % n
 */
 #include <iostream>

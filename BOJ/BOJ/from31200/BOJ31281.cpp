@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/31281 BOJ 31281 ¨©¨≠¨°¨¥¨Ø¨°¨¥¨° ¨≥¨≤¨¶¨•¨° 2024-01-30
+// https://www.acmicpc.net/problem/31281 BOJ 31281 –ó–õ–ê–¢–ù–ê–¢–ê –°–†–ï–î–ê 2024-01-30
 #include <iostream>
 #include <algorithm>
 

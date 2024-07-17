@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/26040 BOJ 26040 Æ¯Á¤ ´ë¹®ÀÚ¸¦ ¼Ò¹®ÀÚ·Î ¹Ù²Ù±â 2024-01-05
+// https://www.acmicpc.net/problem/26040 BOJ 26040 íŠ¹ì • ëŒ€ë¬¸ìë¥¼ ì†Œë¬¸ìë¡œ ë°”ê¾¸ê¸° 2024-01-05
 #include <iostream>
 
 using namespace std;

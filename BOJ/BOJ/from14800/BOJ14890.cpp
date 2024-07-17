@@ -1,16 +1,16 @@
-// https://www.acmicpc.net/problem/14890 BOJ 14890 °æ»ç·Î 2024-01-19
+// https://www.acmicpc.net/problem/14890 BOJ 14890 ê²½ì‚¬ë¡œ 2024-01-19
 /*
-¹®Á¦ Ç®ÀÌ
-1. ÇÑ ÁÙÀ» Âß ÀÐ´Â´Ù.
-2. °°Àº Ãþ ¼ö¸¦ ±â·ÏÇÑ´Ù.(part ¹è¿­)
-2-1. ÀÌÀü ÃþÀ» ±âÁØÀ¸·Î ÇöÀç ÃþÀÌ ´õ ³ôÀ¸¸é ¾ç¼ö, ³·À¸¸é À½¼ö·Î ±â·ÏÇÏ°í, Àý´ë°ªÀº ±× ÃþÀÇ ±æÀÌÀÌ´Ù. Ã¹ ¹øÂ° Ä­Àº ¹«Á¶°Ç ¾ç¼ö·Î ÇÑ´Ù.
-2-2. 1 1 2 2 3 3 ÀÌ¶ó¸é 2 2 2 ·Î ±â·ÏÇÑ´Ù.
-2-3. 2 2 1 1 2 2 ¶ó¸é 2 -2 2 ·Î ±â·ÏÇÑ´Ù.
-2-4. 1 2 2 2 3 2 ¶ó¸é 1 3 1 -1 ·Î ±â·ÏÇÑ´Ù.
-3. part[0] ºÎÅÍ ¼øÈ¸ÇÑ´Ù. ÀÌÈÄ part[1] ºÎÅÍ ÀÐ´Â´Ù.
-4. ÃþÀÇ °íÀúÂ÷¿¡ µû¶ó °æ»ç·Î¸¦ ³õÀ» ¼ö ÀÖ´ÂÁö °Ë»çÇÑ´Ù.
-4-1. ÃþÀÌ ³ôÀº °æ¿ì ÀÌÀü Ãþ¿¡ °æ»ç·Î ±æÀÌ ¸¸Å­ÀÇ °ø°£ÀÌ ³²¾ÆÀÖ´ÂÁö È®ÀÎ
-4-2. ÃþÀÌ ³·Àº °æ¿ì ÇöÀç Ãþ¿¡ °æ»ç·Î ±æÀÌ¸¸Å­ÀÇ °ø°£À» Á¦°Å
+ë¬¸ì œ í’€ì´
+1. í•œ ì¤„ì„ ì­‰ ì½ëŠ”ë‹¤.
+2. ê°™ì€ ì¸µ ìˆ˜ë¥¼ ê¸°ë¡í•œë‹¤.(part ë°°ì—´)
+2-1. ì´ì „ ì¸µì„ ê¸°ì¤€ìœ¼ë¡œ í˜„ìž¬ ì¸µì´ ë” ë†’ìœ¼ë©´ ì–‘ìˆ˜, ë‚®ìœ¼ë©´ ìŒìˆ˜ë¡œ ê¸°ë¡í•˜ê³ , ì ˆëŒ€ê°’ì€ ê·¸ ì¸µì˜ ê¸¸ì´ì´ë‹¤. ì²« ë²ˆì§¸ ì¹¸ì€ ë¬´ì¡°ê±´ ì–‘ìˆ˜ë¡œ í•œë‹¤.
+2-2. 1 1 2 2 3 3 ì´ë¼ë©´ 2 2 2 ë¡œ ê¸°ë¡í•œë‹¤.
+2-3. 2 2 1 1 2 2 ë¼ë©´ 2 -2 2 ë¡œ ê¸°ë¡í•œë‹¤.
+2-4. 1 2 2 2 3 2 ë¼ë©´ 1 3 1 -1 ë¡œ ê¸°ë¡í•œë‹¤.
+3. part[0] ë¶€í„° ìˆœíšŒí•œë‹¤. ì´í›„ part[1] ë¶€í„° ì½ëŠ”ë‹¤.
+4. ì¸µì˜ ê³ ì €ì°¨ì— ë”°ë¼ ê²½ì‚¬ë¡œë¥¼ ë†“ì„ ìˆ˜ ìžˆëŠ”ì§€ ê²€ì‚¬í•œë‹¤.
+4-1. ì¸µì´ ë†’ì€ ê²½ìš° ì´ì „ ì¸µì— ê²½ì‚¬ë¡œ ê¸¸ì´ ë§Œí¼ì˜ ê³µê°„ì´ ë‚¨ì•„ìžˆëŠ”ì§€ í™•ì¸
+4-2. ì¸µì´ ë‚®ì€ ê²½ìš° í˜„ìž¬ ì¸µì— ê²½ì‚¬ë¡œ ê¸¸ì´ë§Œí¼ì˜ ê³µê°„ì„ ì œê±°
 
 */
 #include <iostream>
@@ -32,7 +32,7 @@ int main() {
 
 	int result = 0;
 	for (int i = 0; i < N; i++) {
-		// j = 0 : °¡·Î j = 1 : ¼¼·ÎÁÙ
+		// j = 0 : ê°€ë¡œ j = 1 : ì„¸ë¡œì¤„
 		for (int j = 0; j < 2; j++) {
 			fill(part, part + 100, 0);
 			int partIndex = 0;
@@ -47,22 +47,22 @@ int main() {
 				if (j == 1) {
 					target = board[k][i];
 				}
-				// ÇÑ ÁÙ Âß °è»êÇÏ±â
+				// í•œ ì¤„ ì­‰ ê³„ì‚°í•˜ê¸°
 				if (before == -1) {
 					before = target;
 					count = 1;
 					continue;
 				}
 
-				// µ¿ÀÏÇÑ ÃþÀÏ °æ¿ì
+				// ë™ì¼í•œ ì¸µì¼ ê²½ìš°
 				if (before == target) {
 					++count;
 				}
-				// ´Ù¸¥ ÃþÀÏ °æ¿ì
+				// ë‹¤ë¥¸ ì¸µì¼ ê²½ìš°
 				else {
 					int difference = target - before;
 					int absDifference = abs(difference);
-					// Â÷ÀÌ°¡ 2 ÀÌ»óÀÏ °æ¿ì
+					// ì°¨ì´ê°€ 2 ì´ìƒì¼ ê²½ìš°
 					if (absDifference >= 2) {
 						elevatable = false;
 						break;
@@ -78,18 +78,18 @@ int main() {
 
 			int now = part[0];
 			for (int k = 1; k < partIndex; k++) {
-				// ¿Ã¶ó¿À´Â °æ¿ì
+				// ì˜¬ë¼ì˜¤ëŠ” ê²½ìš°
 				if (part[k] > 0) {
-					// °æ»ç·Î ±æÀÌ ¸¸Å­ÀÇ °ø°£ÀÌ ÀÖ´ÂÁö È®ÀÎ
+					// ê²½ì‚¬ë¡œ ê¸¸ì´ ë§Œí¼ì˜ ê³µê°„ì´ ìžˆëŠ”ì§€ í™•ì¸
 					if (now < L) {
 						elevatable = false;
 						break;
 					}
 					now = part[k];
 				}
-				// ³»·Á¿À´Â °æ¿ì
+				// ë‚´ë ¤ì˜¤ëŠ” ê²½ìš°
 				else {
-					// °æ»ç·Î °ø°£ ¸¸Å­ÀÇ ±æÀÌ¸¦ ÇöÀç Ãþ¿¡¼­ Á¦°Å
+					// ê²½ì‚¬ë¡œ ê³µê°„ ë§Œí¼ì˜ ê¸¸ì´ë¥¼ í˜„ìž¬ ì¸µì—ì„œ ì œê±°
 					now = abs(part[k]) - L;
 					if (now < 0) {
 						elevatable = false;

@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/30501 BOJ 30501 °ü°ø... ¾îÂîÇÏ¿© ¸ñ¸¸ ¿À¼Ì¼Ò... 2024-02-20
+// https://www.acmicpc.net/problem/30501 BOJ 30501 ê´€ê³µ... ì–´ì°Œí•˜ì—¬ ëª©ë§Œ ì˜¤ì…¨ì†Œ... 2024-02-20
 #include <iostream>
 
 using namespace std;

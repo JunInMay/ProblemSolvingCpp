@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/29680 2024-06-23 BOJ 29680 ¬·¬à¬Ü¬Ü¬Ö¬Û¬ß¬í¬Ö ¬Ó¬à¬â¬à¬ä¬Ñ
+// https://www.acmicpc.net/problem/29680 2024-06-23 BOJ 29680 Ð¥Ð¾ÐºÐºÐµÐ¹Ð½Ñ‹Ðµ Ð²Ð¾Ñ€Ð¾Ñ‚Ð°
 #include <iostream>
 #include <cmath>
 #include <iomanip>

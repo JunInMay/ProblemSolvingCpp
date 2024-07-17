@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/27648 2024-06-21 BOJ 27648 ¡ı∞° πËø≠ ∏∏µÈ±‚
+// https://www.acmicpc.net/problem/27648 2024-06-21 BOJ 27648 Ï¶ùÍ∞Ä Î∞∞Ïó¥ ÎßåÎì§Í∏∞
 #include <iostream>
 
 using namespace std;

@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/14502 BOJ 14502 ¿¬±¸¼Ò 2023-12-28
+// https://www.acmicpc.net/problem/14502 BOJ 14502 ì—°êµ¬ì†Œ 2023-12-28
 #include <iostream>
 #include <vector>
 #include <deque>
@@ -17,12 +17,12 @@ int result = 8 * 8 + 1;
 vector<pair<int, int>> viruses;
 
 void dfs(int latest_wall_y, int latest_wall_x, int count) {
-	// ¼¼¿ï º® 3°³ °í¸£±â
+	// ì„¸ìš¸ ë²½ 3ê°œ ê³ ë¥´ê¸°
 	if (count < 3) {
 		for (int i = 0; i < N; i++) {
 			if (i < latest_wall_y) continue;
 			for (int j = 0; j < M; j++) {
-				// ´ÙÀ½ º®À» °ñ¶ó¾ß ÇÏ¹Ç·Î À§Ä¡°¡ ´ÙÀ½ À§Ä¡¿©¾ß ÇÑ´Ù.
+				// ë‹¤ìŒ ë²½ì„ ê³¨ë¼ì•¼ í•˜ë¯€ë¡œ ìœ„ì¹˜ê°€ ë‹¤ìŒ ìœ„ì¹˜ì—¬ì•¼ í•œë‹¤.
 				if ((i > latest_wall_y || j > latest_wall_x)
 					&& board[i][j] == 0) {
 					latest_wall_y = i;
@@ -34,15 +34,15 @@ void dfs(int latest_wall_y, int latest_wall_x, int count) {
 			}
 		}
 	}
-	// º® 3°³ÀÇ À§Ä¡¸¦ °ñ¶ú´Ù¸é ¾ÈÀü¿µ¿ª °è»êÇÑ´Ù.
+	// ë²½ 3ê°œì˜ ìœ„ì¹˜ë¥¼ ê³¨ëë‹¤ë©´ ì•ˆì „ì˜ì—­ ê³„ì‚°í•œë‹¤.
 	else {
-		// Ã³À½¿¡ È®»êµÉ ¹ÙÀÌ·¯½ºµéÀ» deque¿¡ ÀåÀüÇÑ´Ù.
+		// ì²˜ìŒì— í™•ì‚°ë  ë°”ì´ëŸ¬ìŠ¤ë“¤ì„ dequeì— ì¥ì „í•œë‹¤.
 		deque<pair<int, int>> dq;
 		for (int i = 0; i < viruses.size(); i++) {
 			dq.push_back(viruses[i]);
 		}
 
-		// ¹ÙÀÌ·¯½º È®»ê ½Ã¹Ä·¹ÀÌ¼ÇÀ» ÇØº¼ temp_board ¸¦ deep copy·Î ¸¸µç´Ù.
+		// ë°”ì´ëŸ¬ìŠ¤ í™•ì‚° ì‹œë®¬ë ˆì´ì…˜ì„ í•´ë³¼ temp_board ë¥¼ deep copyë¡œ ë§Œë“ ë‹¤.
 		for (int i = 0; i < N; i++) {
 			for (int j = 0; j < M; j++) {
 				temp_board[i][j] = board[i][j];
@@ -53,8 +53,8 @@ void dfs(int latest_wall_y, int latest_wall_x, int count) {
 		}
 
 		/* 
-		bfs ¸¦ µ¹¸ç ¹ÙÀÌ·¯½º È®»ê ½Ã¹Ä·¹ÀÌ¼ÇÇÏ±â
-		2ÀÇ °³¼ö(¹ÙÀÌ·¯½º°¡ È®»êµÈ À§Ä¡, temp_result)¸¦ ¾ò¾î³½´Ù.
+		bfs ë¥¼ ëŒë©° ë°”ì´ëŸ¬ìŠ¤ í™•ì‚° ì‹œë®¬ë ˆì´ì…˜í•˜ê¸°
+		2ì˜ ê°œìˆ˜(ë°”ì´ëŸ¬ìŠ¤ê°€ í™•ì‚°ëœ ìœ„ì¹˜, temp_result)ë¥¼ ì–»ì–´ë‚¸ë‹¤.
 		*/
 		int temp_result = 0;
 		while (!dq.empty()) {
@@ -73,7 +73,7 @@ void dfs(int latest_wall_y, int latest_wall_x, int count) {
 			}
 		}
 
-		// ¹ÙÀÌ·¯½º°¡ ÃÖ¼Ò·Î È®»êµÈ °ªÀ» °»½ÅÇÑ´Ù.
+		// ë°”ì´ëŸ¬ìŠ¤ê°€ ìµœì†Œë¡œ í™•ì‚°ëœ ê°’ì„ ê°±ì‹ í•œë‹¤.
 		result = min(result, temp_result);
 	}
 }
@@ -96,6 +96,6 @@ int main() {
 
 	dfs(-1, -1, 0);
 
-	// º®À» Á¦¿ÜÇÑ °ø°£ - ¹ÙÀÌ·¯½º°¡ ÀÖ´Â °ø°£ - º® 3°³¸¦ °í¸¥ °ø°£ = Á¤´ä
+	// ë²½ì„ ì œì™¸í•œ ê³µê°„ - ë°”ì´ëŸ¬ìŠ¤ê°€ ìˆëŠ” ê³µê°„ - ë²½ 3ê°œë¥¼ ê³ ë¥¸ ê³µê°„ = ì •ë‹µ
 	cout << zero_count - result - 3 << '\n';
 }

@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/21412 BOJ 21412 ¬¥¬â¬à¬Ò¬î 2024-01-28
+// https://www.acmicpc.net/problem/21412 BOJ 21412 Ð”Ñ€Ð¾Ð±ÑŒ 2024-01-28
 #include <iostream>
 #include <cmath>
 

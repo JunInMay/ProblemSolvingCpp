@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/26059 BOJ 26059 ���֬߬լ�ެѬ� 2024-07-16
+// https://www.acmicpc.net/problem/26059 BOJ 26059 Вендомат 2024-07-16
 #include <iostream>
 #include <sstream>
 

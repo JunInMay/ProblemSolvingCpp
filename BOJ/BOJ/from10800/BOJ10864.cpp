@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/10864 BOJ 10864 Ä£±¸ 2024-02-13
+// https://www.acmicpc.net/problem/10864 BOJ 10864 ì¹œêµ¬ 2024-02-13
 #include <iostream>
 
 using namespace std;

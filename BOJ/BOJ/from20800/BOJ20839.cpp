@@ -1,4 +1,4 @@
-﻿// https://www.acmicpc.net/problem/20839 Betygsättning BOJ 20839 2024-01-06
+// https://www.acmicpc.net/problem/20839 Betygsättning BOJ 20839 2024-01-06
 #include <iostream>
 
 using namespace std;

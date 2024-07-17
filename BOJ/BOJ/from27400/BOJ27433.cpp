@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/27433 BOJ 27433 ÆÑÅä¸®¾ó 2 2023-12-12
+// https://www.acmicpc.net/problem/27433 BOJ 27433 íŒ©í† ë¦¬ì–¼ 2 2023-12-12
 #include <iostream>
 #include <cmath>
 

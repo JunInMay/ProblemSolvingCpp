@@ -1,27 +1,27 @@
-// https://www.acmicpc.net/problem/15683 BOJ 15683 °¨½Ã 2024-01-23
+// https://www.acmicpc.net/problem/15683 BOJ 15683 ê°ì‹œ 2024-01-23
 /*
-DFS ¹®Á¦.
-Ä«¸Þ¶ó¸¶´Ù ½Ã¾ßÀÇ ¹æÇâÀÌ ´Ù¸£±â ¶§¹®¿¡ °¢ ¹æÇâÀ» ´Ù ¼³Á¤ÇØÁà¾ß ÇØ¼­ ±¸ÇöÀÌ ²¬²ô·´´Ù.
-³ª´Â up, down, left, right ¿Í °°ÀÌ ½Ã¾ß¸¦ Ã¼Å©ÇÏ´Â ÇÔ¼ö¸¦ ¸¸µé°í
-°¢ Ä«¸Þ¶ó 1~5 Á¾·ù ¸¶´Ù È¸Àü ÄÉÀÌ½º°¡ ´Ù¸£°í, È¸Àü ÄÉÀÌ½º¸¶´Ù º¸´Â ½Ã¾ß°¡ ´Ù¸£¹Ç·Î
-±×°ÍÀ» 2Â÷¿ø ÇÔ¼ö Æ÷ÀÎÅÍ ¹è¿­·Î °ü¸®Çß´Ù.
-3Â÷¿ø ÇÔ¼ö Æ÷ÀÎÅÍ ¹è¿­·Î °ü¸®ÇÏ´Â°Ô ÀÌ»óÀûÀÌ¶ó°í »ý°¢ÇÏ±ä Çß´Ù.
-¿Ö³Ä¸é if camera == 1 , camera == 2 ¿Í °°Àº ºÐ±â¸¦ ¾ø¾Ö°í
-dCamera[camera][i][j] ¿Í °°Àº Çü½ÄÀ¸·Î ÇÔ¼ö¸¦ ºÒ·¯¿Ã ¼ö ÀÖ°Ô µÇ±â ¶§¹®ÀÌ´Ù.
+DFS ë¬¸ì œ.
+ì¹´ë©”ë¼ë§ˆë‹¤ ì‹œì•¼ì˜ ë°©í–¥ì´ ë‹¤ë¥´ê¸° ë•Œë¬¸ì— ê° ë°©í–¥ì„ ë‹¤ ì„¤ì •í•´ì¤˜ì•¼ í•´ì„œ êµ¬í˜„ì´ ê»„ë„ëŸ½ë‹¤.
+ë‚˜ëŠ” up, down, left, right ì™€ ê°™ì´ ì‹œì•¼ë¥¼ ì²´í¬í•˜ëŠ” í•¨ìˆ˜ë¥¼ ë§Œë“¤ê³ 
+ê° ì¹´ë©”ë¼ 1~5 ì¢…ë¥˜ ë§ˆë‹¤ íšŒì „ ì¼€ì´ìŠ¤ê°€ ë‹¤ë¥´ê³ , íšŒì „ ì¼€ì´ìŠ¤ë§ˆë‹¤ ë³´ëŠ” ì‹œì•¼ê°€ ë‹¤ë¥´ë¯€ë¡œ
+ê·¸ê²ƒì„ 2ì°¨ì› í•¨ìˆ˜ í¬ì¸í„° ë°°ì—´ë¡œ ê´€ë¦¬í–ˆë‹¤.
+3ì°¨ì› í•¨ìˆ˜ í¬ì¸í„° ë°°ì—´ë¡œ ê´€ë¦¬í•˜ëŠ”ê²Œ ì´ìƒì ì´ë¼ê³  ìƒê°í•˜ê¸´ í–ˆë‹¤.
+ì™œëƒë©´ if camera == 1 , camera == 2 ì™€ ê°™ì€ ë¶„ê¸°ë¥¼ ì—†ì• ê³ 
+dCamera[camera][i][j] ì™€ ê°™ì€ í˜•ì‹ìœ¼ë¡œ í•¨ìˆ˜ë¥¼ ë¶ˆëŸ¬ì˜¬ ìˆ˜ ìžˆê²Œ ë˜ê¸° ë•Œë¬¸ì´ë‹¤.
 
-»ý°¢ÀÇ Èå¸§ 1. 
-±×·¯³ª °¢ Ä«¸Þ¶ó¸¶´Ù È¸Àü È½¼ö°¡ 4°³, 2°³·Î ´Ù¸£°í, ¶Ç °¢ È¸Àü¸¶´Ù »ç¿ëÇÒ ½Ã¾ßÇÔ¼öÀÇ °³¼ö°¡ ´Ù¸£´Ù.
-°³¼ö°¡ ÀÏÁ¤ÇÏÁö ¾Ê¾Æ¼­ ÀÏÁ¤ÇÑ ¹è¿­¿¡ ´ã±â°¡ ¾î·Á¿ü´Ù. ¾ïÁö·Î ´ãÀ» ¼ø ÀÖ¾ú´Âµ¥, ÇÔ¼ö¸¦ Áßº¹ È£ÃâÇÏ°Ô µÉ °ÍÀÌ´Ù.
-ÀÌ¸¦Å×¸é dCamera[5][4][4] ·Î ¼±¾ðÇÏ¸é µÇ±ä ÇÏ´Âµ¥, ÀÌ·¯¸é 
-Ä«¸Þ¶ó 1¹øÀº dCamera[0][0][3].. ÀÌ·± ½ÄÀ¸·Î ºÒÇÊ¿äÇÏ°Ô ½Ã¾ßÇÔ¼ö¸¦ 16È¸ È£ÃâÇÑ´Ù. 
-Ä«¸Þ¶ó 1¹øÀº »ç½Ç dCamera[0][0][0], dCamera[0][1][0], dCamera[0][2][0], dCamera[0][3][0]
-·Î 4¹ø¸¸ È®ÀÎÇÏ¸é µÇ´Âµ¥ ¸»ÀÌ´Ù. Áï °¡¶ó °ªÀ» ³Ö¾î¾ß µÇ°Ô µÈ´Ù. ±Ùµ¥ ±×·¡µµ µÉ °Í °°±âµµ ÇÏ°í.
+ìƒê°ì˜ íë¦„ 1. 
+ê·¸ëŸ¬ë‚˜ ê° ì¹´ë©”ë¼ë§ˆë‹¤ íšŒì „ íšŸìˆ˜ê°€ 4ê°œ, 2ê°œë¡œ ë‹¤ë¥´ê³ , ë˜ ê° íšŒì „ë§ˆë‹¤ ì‚¬ìš©í•  ì‹œì•¼í•¨ìˆ˜ì˜ ê°œìˆ˜ê°€ ë‹¤ë¥´ë‹¤.
+ê°œìˆ˜ê°€ ì¼ì •í•˜ì§€ ì•Šì•„ì„œ ì¼ì •í•œ ë°°ì—´ì— ë‹´ê¸°ê°€ ì–´ë ¤ì› ë‹¤. ì–µì§€ë¡œ ë‹´ì„ ìˆœ ìžˆì—ˆëŠ”ë°, í•¨ìˆ˜ë¥¼ ì¤‘ë³µ í˜¸ì¶œí•˜ê²Œ ë  ê²ƒì´ë‹¤.
+ì´ë¥¼í…Œë©´ dCamera[5][4][4] ë¡œ ì„ ì–¸í•˜ë©´ ë˜ê¸´ í•˜ëŠ”ë°, ì´ëŸ¬ë©´ 
+ì¹´ë©”ë¼ 1ë²ˆì€ dCamera[0][0][3].. ì´ëŸ° ì‹ìœ¼ë¡œ ë¶ˆí•„ìš”í•˜ê²Œ ì‹œì•¼í•¨ìˆ˜ë¥¼ 16íšŒ í˜¸ì¶œí•œë‹¤. 
+ì¹´ë©”ë¼ 1ë²ˆì€ ì‚¬ì‹¤ dCamera[0][0][0], dCamera[0][1][0], dCamera[0][2][0], dCamera[0][3][0]
+ë¡œ 4ë²ˆë§Œ í™•ì¸í•˜ë©´ ë˜ëŠ”ë° ë§ì´ë‹¤. ì¦‰ ê°€ë¼ ê°’ì„ ë„£ì–´ì•¼ ë˜ê²Œ ëœë‹¤. ê·¼ë° ê·¸ëž˜ë„ ë  ê²ƒ ê°™ê¸°ë„ í•˜ê³ .
 
-»ý°¢ÀÇ Èå¸§ 2.
-°¡¶óÇÔ¼ö¸¦ ¸¸µé¾î¼­ 3Â÷¿ø ¹è¿­ÀÇ ºó °ªÀ» Ã¤¿ìÀÚ~! ´Â »ý°¢À» Çß´Ù.
+ìƒê°ì˜ íë¦„ 2.
+ê°€ë¼í•¨ìˆ˜ë¥¼ ë§Œë“¤ì–´ì„œ 3ì°¨ì› ë°°ì—´ì˜ ë¹ˆ ê°’ì„ ì±„ìš°ìž~! ëŠ” ìƒê°ì„ í–ˆë‹¤.
 
-»ý°¢ÀÇ Èå¸§ 3.
-¾îÂ÷ÇÇ Àü¿ª¿¡ ¼±¾ðµÈ ¹è¿­Àº null °ªÀÌ ÀÚµ¿À¸·Î µé¾î°¡Áö¾Ê³ª? ±×³É nullptr Ã¼Å©¸¦ ÇÏÀÚ.
+ìƒê°ì˜ íë¦„ 3.
+ì–´ì°¨í”¼ ì „ì—­ì— ì„ ì–¸ëœ ë°°ì—´ì€ null ê°’ì´ ìžë™ìœ¼ë¡œ ë“¤ì–´ê°€ì§€ì•Šë‚˜? ê·¸ëƒ¥ nullptr ì²´í¬ë¥¼ í•˜ìž.
 */
 #include <iostream>
 #include <vector>
@@ -35,9 +35,9 @@ int N, M;
 int result;
 
 /*
-CCTV ½Ã¾ß ÇÔ¼ö Á¤ÀÇ (»óÇÏÁÂ¿ì)
+CCTV ì‹œì•¼ í•¨ìˆ˜ ì •ì˜ (ìƒí•˜ì¢Œìš°)
 */
-// º®(6)¿¡ °É¸®Áö ¾Ê´Â´Ù¸é 7(½Ã¾ß)·Î Ã¼Å©ÇÑ´Ù.
+// ë²½(6)ì— ê±¸ë¦¬ì§€ ì•ŠëŠ”ë‹¤ë©´ 7(ì‹œì•¼)ë¡œ ì²´í¬í•œë‹¤.
 void up(int y, int x, int board[][8]) {
 	//cout << " up ! \n";
 	for (int i = y; i >= 0; i--) {
@@ -70,19 +70,19 @@ void right(int y, int x, int board[][8]) {
 	}
 }
 
-// °¡¶óÇÔ¼ö
+// ê°€ë¼í•¨ìˆ˜
 void gara(int y, int x, int board[][8]) { }
 
-// [Ä«¸Þ¶óº° È¸Àü °¡´ÉÇÑ °á°ú][È¸ÀüÇßÀ» ¶§ °è»êµÇ´Â CCTV ½Ã¾ßÇÔ¼öÀÇ °³¼ö]
+// [ì¹´ë©”ë¼ë³„ íšŒì „ ê°€ëŠ¥í•œ ê²°ê³¼][íšŒì „í–ˆì„ ë•Œ ê³„ì‚°ë˜ëŠ” CCTV ì‹œì•¼í•¨ìˆ˜ì˜ ê°œìˆ˜]
 int dSizes[5][2] = {
 	{4, 1}, {2, 2}, {4, 2}, {4, 3}, {1, 4}
 };
 
 /*
-»ý°¢ÀÇ Èå¸§ 2.
-¤»¤»¤»¤»¤»¤»¤»¤»¤»¤»¤»¤»
-ÀÌ°Ô ¸Â´ÂÁö ¸ð¸£°Ú´Ù.
-ÀÏ´Ü °¡¶óÇÔ¼ö¸¦ ÅëÇØ Á¤ÀÇÇß´Âµ¥, ±×³É Å©±â¸¦ ÁÖ¸é ¾îÂ÷ÇÇ Àü¿ª¿¡¼± null°ªÀÌ µé¾î°¡Áö ¾Ê³ª?
+ìƒê°ì˜ íë¦„ 2.
+ã…‹ã…‹ã…‹ã…‹ã…‹ã…‹ã…‹ã…‹ã…‹ã…‹ã…‹ã…‹
+ì´ê²Œ ë§žëŠ”ì§€ ëª¨ë¥´ê² ë‹¤.
+ì¼ë‹¨ ê°€ë¼í•¨ìˆ˜ë¥¼ í†µí•´ ì •ì˜í–ˆëŠ”ë°, ê·¸ëƒ¥ í¬ê¸°ë¥¼ ì£¼ë©´ ì–´ì°¨í”¼ ì „ì—­ì—ì„  nullê°’ì´ ë“¤ì–´ê°€ì§€ ì•Šë‚˜?
 */
 //void (*dAll[5][4][4])(int, int, int[][8]) = {
 //	{
@@ -118,75 +118,75 @@ int dSizes[5][2] = {
 //};
 
 /*
-»ý°¢ÀÇ Èå¸§ 3.
-¾îÂ÷ÇÇ Àü¿ªÀ¸·Î ¼±¾ðÇÏ¸é nullptr ¾Æ´Ñ°¡? ±×³É ¼±¾ðÇÏ°í nullptr Ã¼Å©ÇÏ¸éµÇÀÝ¾Æ?
+ìƒê°ì˜ íë¦„ 3.
+ì–´ì°¨í”¼ ì „ì—­ìœ¼ë¡œ ì„ ì–¸í•˜ë©´ nullptr ì•„ë‹Œê°€? ê·¸ëƒ¥ ì„ ì–¸í•˜ê³  nullptr ì²´í¬í•˜ë©´ë˜ìž–ì•„?
 */
 void (*dAll[5][4][4])(int, int, int[][8]) = {
-	// 1¹ø Ä«¸Þ¶ó
+	// 1ë²ˆ ì¹´ë©”ë¼
 	{
 		{left},
 		{right},
 		{up},
 		{down}
 	},
-	// 2¹ø Ä«¸Þ¶ó
+	// 2ë²ˆ ì¹´ë©”ë¼
 	{
 		{up, down},
 		{left, right}
 	},
-	// 3¹ø Ä«¸Þ¶ó
+	// 3ë²ˆ ì¹´ë©”ë¼
 	{
 		{up, right},
 		{right, down},
 		{down, left},
 		{left, up}
 	},
-	//4 ¹ø Ä«¸Þ¶ó
+	//4 ë²ˆ ì¹´ë©”ë¼
 	{
 		{left, up, right},
 		{up, right, down},
 		{right, down, left},
 		{down, left, up}
 	},
-	//5¹ø Ä«¸Þ¶ó
+	//5ë²ˆ ì¹´ë©”ë¼
 	{
 		{left, up, right, down}
 	}
 };
 
 /*
-»ý°¢ÀÇ Èå¸§ 1.
+ìƒê°ì˜ íë¦„ 1.
 */
-// Ä«¸Þ¶ó 1ÀÇ È¸ÀüÀº 4¹æÇâ. »óÇÏÁÂ¿ì.
+// ì¹´ë©”ë¼ 1ì˜ íšŒì „ì€ 4ë°©í–¥. ìƒí•˜ì¢Œìš°.
 void (*d1[4][1])(int, int, int[][8]) = {
 	{left}, {right}, {up}, {down}
 };
 
-// Ä«¸Þ¶ó 2ÀÇ È¸ÀüÀº 2¹æÇâ. °¢ ¹æÇâ¸¶´Ù »óÇÏ, ÁÂ¿ì·Î 2°³ ¹æÇâ¾¿ ½Ã¾ß¸¦ °è»êÇÔ.
+// ì¹´ë©”ë¼ 2ì˜ íšŒì „ì€ 2ë°©í–¥. ê° ë°©í–¥ë§ˆë‹¤ ìƒí•˜, ì¢Œìš°ë¡œ 2ê°œ ë°©í–¥ì”© ì‹œì•¼ë¥¼ ê³„ì‚°í•¨.
 void (*d2[2][2])(int, int, int[][8]) = {
 	{up, down}, {left, right}
 };
 
-// Ä«¸Þ¶ó 3ÀÇ È¸ÀüÀº 4¹æÇâ. °¢ ¹æÇâ¸¶´Ù »ó¿ì, ¿ìÇÏ, ÇÏÁÂ, ÇÏ»ó °¢ 2°³ ¹æÇâ¾¿ ½Ã¾ß¸¦ °è»ê.
+// ì¹´ë©”ë¼ 3ì˜ íšŒì „ì€ 4ë°©í–¥. ê° ë°©í–¥ë§ˆë‹¤ ìƒìš°, ìš°í•˜, í•˜ì¢Œ, í•˜ìƒ ê° 2ê°œ ë°©í–¥ì”© ì‹œì•¼ë¥¼ ê³„ì‚°.
 void (*d3[4][2])(int, int, int[][8]) = {
 	{up, right}, {right, down},
 	{down, left}, {left, up}
 };
 
-// ÀÌÇÏµ¿¹®...
+// ì´í•˜ë™ë¬¸...
 void (*d4[4][3])(int, int, int[][8]) = {
 	{left, up, right}, {up, right, down},
 	{right, down, left}, {down, left, up}
 };
 
-// ÀÌÇÏµ¿¹®...
+// ì´í•˜ë™ë¬¸...
 void (*d5[1][4])(int, int, int[][8]) = {
 	{left, up, right, down}
 };
 
 void dfs(int board[][8], vector<pair<int, pair<int, int>>>& v, int vIndex) {
 	/*
-	CCTVÀÇ ½Ã¾ß¸¦ ¸ðµÎ Ã¼Å©Çß´Ù¸é »ç°¢Áö´ë¸¦ °è»êÇØ¼­ min °ªÀ» ÃßÃâÇÑ´Ù.
+	CCTVì˜ ì‹œì•¼ë¥¼ ëª¨ë‘ ì²´í¬í–ˆë‹¤ë©´ ì‚¬ê°ì§€ëŒ€ë¥¼ ê³„ì‚°í•´ì„œ min ê°’ì„ ì¶”ì¶œí•œë‹¤.
 	*/
 	if (vIndex == v.size()) {
 		//cout << "----------------\n";
@@ -243,12 +243,12 @@ void function(int board[8][8]) {
 int main() {
 	cin >> N >> M;
 
-	result = 8 * 8 + 1; // ±×³É ±âº» °ª.
-	vector<pair<int, pair<int, int>>> v; // CCTV¸¦ ´ãÀ» º¤ÅÍ (Ä«¸Þ¶ó Á¾·ù, (Ä«¸Þ¶ó y, x))
+	result = 8 * 8 + 1; // ê·¸ëƒ¥ ê¸°ë³¸ ê°’.
+	vector<pair<int, pair<int, int>>> v; // CCTVë¥¼ ë‹´ì„ ë²¡í„° (ì¹´ë©”ë¼ ì¢…ë¥˜, (ì¹´ë©”ë¼ y, x))
 	for (int i = 0; i < N; i++) {
 		for (int j = 0; j < M; j++) {
 			cin >> board[i][j];
-			if (board[i][j] > 0 && board[i][j] < 6) { // ÀÔ·Â°ªÀÌ 1~5 ¸é CCTV ¶ó´Â ¶æÀÌ´Ù.
+			if (board[i][j] > 0 && board[i][j] < 6) { // ìž…ë ¥ê°’ì´ 1~5 ë©´ CCTV ë¼ëŠ” ëœ»ì´ë‹¤.
 				v.push_back(pair<int, pair<int, int>>(board[i][j], pair<int, int>(i, j)));
 			}
 			

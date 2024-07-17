@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/13752 BOJ 13752 È÷½ºÅä±×·¥ 2023-12-30
+// https://www.acmicpc.net/problem/13752 BOJ 13752 ížˆìŠ¤í† ê·¸ëž¨ 2023-12-30
 #include <iostream>
 
 using namespace std;
