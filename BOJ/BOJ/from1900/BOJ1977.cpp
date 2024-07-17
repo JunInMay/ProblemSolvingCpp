@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/1977 BOJ 1977 ¿ÏÀüÁ¦°ö¼ö 2023-12-21
+// https://www.acmicpc.net/problem/1977 BOJ 1977 ì™„ì „ì œê³±ìˆ˜ 2023-12-21
 #include <iostream>
 #include <cmath>
 

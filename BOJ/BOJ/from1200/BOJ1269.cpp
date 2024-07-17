@@ -1,6 +1,6 @@
-// https://www.acmicpc.net/problem/1269 ´ëÄª Â÷ÁýÇÕ 2023-11-24
+// https://www.acmicpc.net/problem/1269 ëŒ€ì¹­ ì°¨ì§‘í•© 2023-11-24
 /*
-Â÷ÁýÇÕ °ü·Ã ¹®Á¦. STL set »ç¿ëÇØº¸±â.
+ì°¨ì§‘í•© ê´€ë ¨ ë¬¸ì œ. STL set ì‚¬ìš©í•´ë³´ê¸°.
 */
 #include <iostream>
 #include <set>

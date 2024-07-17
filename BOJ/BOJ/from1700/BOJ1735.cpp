@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/1735 BOJ 1735 ºÐ¼ö ÇÕ 2023-11-27
+// https://www.acmicpc.net/problem/1735 BOJ 1735 ë¶„ìˆ˜ í•© 2023-11-27
 #include <iostream>
 
 using namespace std;
