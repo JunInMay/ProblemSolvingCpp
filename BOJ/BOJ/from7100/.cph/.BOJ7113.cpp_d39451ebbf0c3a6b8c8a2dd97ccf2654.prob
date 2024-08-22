@@ -1,0 +1,1 @@
+{"name":"Local: BOJ7113","url":"c:\\jun\\projects\\ProblemSolvingCpp\\BOJ\\BOJ\\from7100\\BOJ7113.cpp","tests":[{"id":1724335166140,"input":"3 7","output":"5"},{"id":1724335204122,"input":"9999 9999","output":"1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\jun\\projects\\ProblemSolvingCpp\\BOJ\\BOJ\\from7100\\BOJ7113.cpp","group":"local","local":true}
