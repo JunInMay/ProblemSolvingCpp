@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/18810 2025-03-18 BOJ 18810 Amazing Sushi
+// https://www.acmicpc.net/problem/18810 2025-03-18 BOJ 18810 Amazing Sushi - ChatGPT 해설 보고 풀이
 #include <iostream>
 #include <cmath>
 
@@ -26,19 +26,18 @@ int main() {
 
   string result = "No";
 
-  // 가장 적게 먹을 수 있는 값이 범위 내에 들어오고, 가장 많이 먹을 수 있는 값도 범위내에 들어올 수 있는 경우.
-  int verifier = remains + sum * 2;
-  if (minA + minB <= verifier && verifier <= maxA + maxB) {
-    int neededA = max(0, minA - sum);
-    int neededB = max(0, minB - sum);
-    int acceptableA = max(0, maxA - sum);
-    int acceptableB = max(0, maxB - sum);
+  int k_min = max(0, minA - sum);
+  int k_max = min(remains, maxA - sum);
 
-    if (neededA + neededB <= remains) {
-      remains -= (neededA + neededB);
-      if (remains <= acceptableA + acceptableB) result = "Yes";
-    }
-  }
+  int k2_min = max(0, sum + remains - maxB);
+  int k2_max = min(remains, sum + remains - minB);
 
-  cout << result;
+  int left = max(k_min, k2_min);
+  int right = min(k_max, k2_max);
+
+  if (left <= right) cout << "Yes\n";
+  else cout << "No\n";
+
+
+  // cout << result;
 }
