@@ -17,12 +17,8 @@ int main() {
   int tc;
   cin >> tc;
 
-  cout << fixed << setprecision(10);
+  cout << fixed << setprecision(3);
 
-  cout << 2.5555 << '\n';
-  cout << 2.5556 << '\n';
-  cout << 2.5557 << '\n';
-  cout << 2.5558 << '\n';
   while(tc-- > 0) {
     int n;
     cin >> n;
